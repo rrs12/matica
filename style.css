@@ -95,10 +95,6 @@ body{
   overflow-y: hidden;
 }
 
-.nav_bar{
- background-color: #00000050; 
- color: white;
-}
 
 .overflow_hide{
   overflow: hidden;
@@ -109,8 +105,8 @@ padding: 7px;
 border-radius: 50px;
 }
 .bg-gradient{
-  background: linear-gradient(90deg, rgba(254,248,2,1) 0%, rgba(243,109,32,1) 100%);
+  background: linear-gradient(90deg, rgb(170, 62, 0) 0%, rgb(243, 155, 32) 100%);
   padding: 7px;
-  border-radius: 50px;
-  color: black;
+  border-radius: 5px;
+  color: white;
 }
