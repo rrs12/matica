@@ -74,3 +74,15 @@ border-radius: 50px;
 .menu_button{
     z-index: 999;
 }
+
+.ig:hover{
+  fill: #bc2a8d;
+}
+
+.ld:hover{
+  fill: #0077b7;
+}
+
+.fb:hover{
+  fill: #1f7bf2;
+}
