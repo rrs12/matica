@@ -71,3 +71,6 @@ border-radius: 50px;
 .nav-radius{
     border-radius: 60px;
 }
+.menu_button{
+    z-index: 999;
+}
