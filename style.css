@@ -18,53 +18,7 @@
 ::-webkit-scrollbar-thumb:hover {
   background: gray;
 }
-/* Cool infinite background scrolling animation.
-* Twitter: @kootoopas
-*/
-/* Exo thin font from Google. */
-@import url(https://fonts.googleapis.com/css?family=Exo:100);
-/* Background data (Original source: https://subtlepatterns.com/grid-me/) */
-/* Animations */
-@-webkit-keyframes bg-scrolling-reverse {
-100% {
-  background-position: 50px 50px;
-}
-}
-@-moz-keyframes bg-scrolling-reverse {
-100% {
-  background-position: 50px 50px;
-}
-}
-@-o-keyframes bg-scrolling-reverse {
-100% {
-  background-position: 50px 50px;
-}
-}
-@keyframes bg-scrolling-reverse {
-100% {
-  background-position: 50px 50px;
-}
-}
-@-webkit-keyframes bg-scrolling {
-0% {
-  background-position: 50px 50px;
-}
-}
-@-moz-keyframes bg-scrolling {
-0% {
-  background-position: 50px 50px;
-}
-}
-@-o-keyframes bg-scrolling {
-0% {
-  background-position: 50px 50px;
-}
-}
-@keyframes bg-scrolling {
-0% {
-  background-position: 50px 50px;
-}
-}
+
 /* Main styles */
 .home-sec {
 color: #fff;
@@ -113,4 +67,7 @@ border-radius: 50px;
   padding: 7px;
   border-radius: 50px;
   color: black;
+}
+.nav-radius{
+    border-radius: 60px;
 }
