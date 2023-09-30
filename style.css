@@ -72,8 +72,11 @@ body{
     background: #000;
     height: 200vh !important;
     overflow: hidden;
+    overflow-y: hidden;
+    overflow-x: hidden;
 }
 
 #full-screen{
     background-color: #000;
+    overflow-x: hidden;
   }
