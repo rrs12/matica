@@ -11,7 +11,8 @@ function onToggleMenu(e) {
     logo_text.classList.toggle('hidden')
     menu_button.classList.toggle('bg-gradient')
     menu_button.classList.toggle('border-1')
-    menu_button.classList.toggle('ml-[400px]')
+    menu_button.classList.toggle('ml-[5vh]')
+    home_section.classList.toggle('hidden')
 }
 const theme_btn = document.querySelector('.theme_btn')
 
