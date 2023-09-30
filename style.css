@@ -125,3 +125,7 @@ body{
       left: 0;
     }
   }
+
+#full-screen{
+    background-color: #000;
+  }

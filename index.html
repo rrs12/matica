@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,76 +11,83 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://kit.fontawesome.com/92fed7f738.js" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
-    <link rel="stylesheet" href="style.css"></link>
-    
+    <link rel="stylesheet" href="style.css">
+    </link>
+
 </head>
 </head>
+
 <body class="font-[Poppins]">
     <!--Navbar-->
-    <header class="nav_bar">
-        <nav class="flex justify-between items-center w-full px-4 mx-auto py-4 bg-gradient-to-r from-black to-gray-900 text-white">
-            <div class="logo_text">
-                <a href="/index.html" class="flex items-center">
-                    <img src="logo.png" class="h-16 mr-3" alt="Flowbite Logo" />
-                    <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white" style="overflow: hidden">Matica</span>
-                </a>            
-            </div>
-            <div class="nav-radius duration-500 nav-links lg:static absolute lg:min-h-fit min-h-[60vh] left-[100%] top-[3%] lg:ml-10  lg:w-auto lg:py-2 w-full flex-row px-20 text-2xl lg:text-base lg:mt-0 py-14">
-                <ul class="flex lg:flex-row flex-col lg:items-center lg:gap-[2vw] gap-8 font-semibold ">
-                    <li class=" icons lg:flex overflow-hidden lg:hidden">
-                        <ion-icon name="sunny" class="theme_btn ml-2 bottom-5 w-6 h-6 cursor-pointer h-7 w-7 text-yellow-500" onclick="theme_change(this)"></ion-icon>
-                        <ion-icon name="notifications-outline" class="ml-2 bottom-5 w-6 h-6 cursor-pointer h-7 w-7 text-yellow-500"></ion-icon>
-                        <ion-icon name="person" class="ml-2 bottom-5 w-6 h-6 cursor-pointer h-7 w-7 text-yellow-500"></ion-icon>
-                      </li>
-                    <li class="cursor-pointer overflow-hidden ">
-                        <a class=" hover:text-orange-400 lg:py-0" href="#" >Features</a>
-                    </li>
-                    <li class="cursor-pointer overflow-hidden">
-                        <a class=" hover:text-orange-400" href="#">Pricing</a>
-                    </li>
-                    <li class="cursor-pointer overflow-hidden">
-                        <a class=" hover:text-orange-400" href="#">Get in touch</a>
-                    </li> 
-                    
-                    <li>
-                        <button class="py-2 px-2 border-2 rounded-md hover:border-orange-400 hover:text-orange-400 border-md">Sign up</button>
-                    </li>
-                    <li>
-                        <button class="bg-gradient lg:mt-0 lg:ml-10 mt-10">Get early access</button>
-                    </li>
-                    <li class=" icons lg:flex overflow-hidden hidden ">
-                        <ion-icon name="sunny" class="theme_btn ml-2 bottom-5 w-6 h-6 cursor-pointer h-7 w-7 text-yellow-500" onclick="theme_change(this)"></ion-icon>
-                        <ion-icon name="notifications-outline" class="ml-2 bottom-5 w-6 h-6 cursor-pointer h-7 w-7 text-yellow-500"></ion-icon>
-                        <ion-icon name="person" class="ml-2 bottom-5 w-6 h-6 cursor-pointer h-7 w-7 text-yellow-500"></ion-icon>
-                      </li>
-                    <li class="lg:hidden mt-20 overflow-hidden ">
-                      <ion-icon name="logo-facebook" class="ml-2 bottom-5 w-6 h-6 cursor-pointer fb"></ion-icon>
-                      <ion-icon name="logo-linkedin" class="ml-2 bottom-5 w-6 h-6 cursor-pointer ld"></ion-icon>
-                      <ion-icon name="logo-instagram" class="ml-2 bottom-5 w-6 h-6 cursor-pointer ig" ></ion-icon>
-                    </li>
+    <div id="full-screen" class="h-screen">
+        <header class="nav_bar">
+            <nav
+                class="flex justify-between items-center w-full px-4 mx-auto py-4 bg-gradient-to-r from-black to-gray-900 text-white">
+                <div class="logo_text">
+                    <a href="/index.html" class="flex items-center">
+                        <img src="logo.png" class="h-16 mr-3" alt="Flowbite Logo" />
+                        <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white"
+                            style="overflow: hidden">Matica</span>
+                    </a>
+                </div>
+                <div
+                    class="nav-radius duration-500 nav-links lg:static absolute lg:min-h-fit min-h-[60vh] left-[100%] top-[3%] lg:ml-10  lg:w-auto lg:py-2 w-full flex-row px-20 text-2xl lg:text-base lg:mt-0 py-14">
+                    <ul class="flex lg:flex-row flex-col lg:items-center lg:gap-[2vw] gap-8 font-semibold ">
+                        <li class=" icons lg:flex overflow-hidden lg:hidden">
+                            <ion-icon name="sunny"
+                                class="theme_btn ml-2 bottom-5 w-6 h-6 cursor-pointer h-7 w-7 text-yellow-500"
+                                onclick="theme_change(this)"></ion-icon>
+                            <ion-icon name="notifications-outline"
+                                class="ml-2 bottom-5 w-6 h-6 cursor-pointer h-7 w-7 text-yellow-500"></ion-icon>
+                            <ion-icon name="person"
+                                class="ml-2 bottom-5 w-6 h-6 cursor-pointer h-7 w-7 text-yellow-500"></ion-icon>
+                        </li>
+                        <li class="cursor-pointer overflow-hidden ">
+                            <a class=" hover:text-orange-400 lg:py-0" href="#">Features</a>
+                        </li>
+                        <li class="cursor-pointer overflow-hidden">
+                            <a class=" hover:text-orange-400" href="#">Pricing</a>
+                        </li>
+                        <li class="cursor-pointer overflow-hidden">
+                            <a class=" hover:text-orange-400" href="#">Get in touch</a>
+                        </li>
 
-                </ul>
-            </div>
-            <div>
-                <ion-icon onclick="onToggleMenu(this)" name="menu" class=" menu_button text-3xl items-center cursor-pointer lg:hidden"></ion-icon>
-            </div>
-        </nav>
-    </header>
+                        <li>
+                            <button
+                                class="py-2 px-2 border-2 rounded-md hover:border-orange-400 hover:text-orange-400 border-md">Sign
+                                up</button>
+                        </li>
+                        <li>
+                            <button class="bg-gradient lg:mt-0 lg:ml-10 mt-10">Get early access</button>
+                        </li>
+                        <li class=" icons lg:flex overflow-hidden hidden ">
+                            <ion-icon name="sunny"
+                                class="theme_btn ml-2 bottom-5 w-6 h-6 cursor-pointer h-7 w-7 text-yellow-500"
+                                onclick="theme_change(this)"></ion-icon>
+                            <ion-icon name="notifications-outline"
+                                class="ml-2 bottom-5 w-6 h-6 cursor-pointer h-7 w-7 text-yellow-500"></ion-icon>
+                            <ion-icon name="person"
+                                class="ml-2 bottom-5 w-6 h-6 cursor-pointer h-7 w-7 text-yellow-500"></ion-icon>
+                        </li>
+                        <li class="lg:hidden mt-20 overflow-hidden ">
+                            <ion-icon name="logo-facebook" class="ml-2 bottom-5 w-6 h-6 cursor-pointer fb"></ion-icon>
+                            <ion-icon name="logo-linkedin" class="ml-2 bottom-5 w-6 h-6 cursor-pointer ld"></ion-icon>
+                            <ion-icon name="logo-instagram" class="ml-2 bottom-5 w-6 h-6 cursor-pointer ig"></ion-icon>
+                        </li>
 
-    <!--Home section-->
-    <section id="home" class="home_section justify-between">
-      <div class="wrapper">
-          <br><br>
-          <p>Time is money</p>
-          <div class="static-txt">
-               Create</div>
-          <ul class="dynamic-txts">
-              <br>
-            <li><span>Faster</span></li>
-            <li><span>Better</span></li>
-          </ul>
-        </div>
-  </section>
-<script src="script.js"></script>
+                    </ul>
+                </div>
+                <div>
+                    <ion-icon onclick="onToggleMenu(this)" name="menu"
+                        class=" menu_button text-3xl items-center cursor-pointer lg:hidden"></ion-icon>
+                </div>
+            </nav>
+        </header>
+
+        <!--Home section-->
+        <section id="home" class="home_section h-3/4 flex items-center justify-center">
+        </section>
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>
