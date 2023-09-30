@@ -27,6 +27,7 @@ overflow-x: hidden;
 
 body{
   overflow-y: hidden;
+  background-color: #000;
 }
 
 .menu_button{

@@ -20,7 +20,7 @@
 
 <body class="font-[Poppins] overflow-hidden">
     <!--Navbar-->
-    <div id="full-screen" class="h-screen">
+    <div id="full-screen" class="overflow-hidden">
         <header class="nav_bar">
             <nav class="flex justify-between items-center w-full px-4 mx-auto z-2 py-4 bg-gradient-to-r from-black to-gray-900 text-white">
                 <div class="logo_text">
@@ -30,19 +30,9 @@
                             style="overflow: hidden">Matica</span>
                     </a>
                 </div>
-                <div class="nav-radius overflow-hidden duration-500 nav-links lg:static absolute lg:min-h-fit min-h-[50vh] left-[100%] top-[3%] lg:ml-10  lg:w-auto lg:py-2 w-full flex-row  text-xl lg:text-base lg:mt-0 py-14 lg:ms-auto">
+                <div class="nav-radius overflow-hidden duration-500 nav-links lg:static absolute lg:min-h-fit min-h-[70vh] left-[100%] top-[3%] lg:ml-10  lg:w-auto lg:py-2 w-full flex-row  text-xl lg:text-base lg:mt-0 py-14 lg:ms-auto">
 
                     <ul class="flex lg:flex-row flex-col lg:items-center lg:gap-[2vw] gap-8 font-normal px-20">
-                        <li class=" icons lg:flex overflow-hidden lg:hidden">
-
-                            <ion-icon name="sunny"
-                                class="theme_btn ml-2 bottom-5 w-6 h-6 cursor-pointer h-7 w-7 text-yellow-500"
-                                onclick="theme_change(this)"></ion-icon>
-                            <ion-icon name="notifications-outline"
-                                class="ml-2 bottom-5 w-6 h-6 cursor-pointer h-7 w-7 text-yellow-500"></ion-icon>
-                            <ion-icon name="person"
-                                class="ml-2 bottom-5 w-6 h-6 cursor-pointer h-7 w-7 text-yellow-500"></ion-icon>
-                        </li>
                         <li class="cursor-pointer overflow-hidden ">
                             <a class=" hover:text-orange-400 lg:py-0" href="#">Features</a>
                         </li>
@@ -60,15 +50,6 @@
                         </li>
                         <li>
                             <button class="bg-gradient border-0 lg:mt-0 lg:ml-10 mt-10">Get early access</button>
-                        </li>
-                        <li class=" icons lg:flex overflow-hidden hidden ">
-                            <ion-icon name="sunny"
-                                class="theme_btn ml-2 bottom-5 w-6 h-6 cursor-pointer h-7 w-7 text-yellow-500"
-                                onclick="theme_change(this)"></ion-icon>
-                            <ion-icon name="notifications-outline"
-                                class="ml-2 bottom-5 w-6 h-6 cursor-pointer h-7 w-7 text-yellow-500"></ion-icon>
-                            <ion-icon name="person"
-                                class="ml-2 bottom-5 w-6 h-6 cursor-pointer h-7 w-7 text-yellow-500"></ion-icon>
                         </li>
                         <li class="lg:hidden mt-20 overflow-hidden ">
                             <ion-icon name="logo-facebook" class="ml-2 bottom-5 w-6 h-6 cursor-pointer fb"></ion-icon>
@@ -101,11 +82,10 @@
                 </p>
             </li>
             <li class="py-5 mt-18">
-                <form action="#">
+                <form action="#" class="mx-24">
                     <div class="items-center mx-auto mb-3 space-y-4 max-w-screen-sm sm:flex sm:space-y-0">
                         <div class="relative w-full">
-                            <label for="email" class="hidden mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Email address</label>
-                            <div class="flex absolute inset-y-0 left-0 items-center pl-3 pointer-events-none">
+                            <div class="flex absolute inset-y-0 left-0 items-center pl-3 pointer-events-none xs:text-sm">
                                 <svg class="w-5 h-5 text-gray-500 dark:text-gray-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"></path><path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"></path></svg>
                             </div>
                             <input class="block p-3 pl-10 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 sm:rounded-none sm:rounded-l-lg focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="Enter your email" type="email" id="email" required="">
