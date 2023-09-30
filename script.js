@@ -7,6 +7,7 @@ const menu_button = document.querySelector('.menu_button')
             navLinks.classList.toggle('shadow')
             navLinks.classList.toggle('nav_bar')
             navLinks.classList.toggle('bg-gray-900')
+            navLinks.classList.toggle('shadow-lg')
             logo_text.classList.toggle('hidden')
-            /**menu_button.classList.toggle('hidden')**/
+            menu_button.classList.toggle('bg-gradient')
         }
