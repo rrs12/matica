@@ -22,8 +22,7 @@
     <!--Navbar-->
     <div id="full-screen" class="h-screen">
         <header class="nav_bar">
-            <nav
-                class="flex justify-between items-center w-full px-4 mx-auto py-4 bg-gradient-to-r from-black to-gray-900 text-white">
+            <nav class="flex justify-between items-center w-full px-4 mx-auto z-2 py-4 bg-gradient-to-r from-black to-gray-900 text-white">
                 <div class="logo_text">
                     <a href="/index.html" class="flex items-center">
                         <img src="logo.png" class="h-16 mr-3" alt="Flowbite Logo" />
@@ -31,8 +30,8 @@
                             style="overflow: hidden">Matica</span>
                     </a>
                 </div>
-                <div class="nav-radius overflow_hide overflow-hidden duration-500 nav-links lg:static absolute lg:min-h-fit min-h-[60vh] left-[100%] top-[3%] lg:ml-10  lg:w-auto lg:py-2 w-full flex-row px-20 text-2xl lg:text-base lg:mt-0 py-14 lg:ms-auto">
-                    <ul class="flex lg:flex-row flex-col lg:items-center lg:gap-[2vw] gap-8 font-semibold ">
+                <div class="nav-radius overflow_hide overflow-hidden duration-500 nav-links lg:static absolute lg:min-h-fit min-h-[50vh] left-[100%] top-[3%] lg:ml-10  lg:w-auto lg:py-2 w-full flex-row  text-xl lg:text-base lg:mt-0 py-14 lg:ms-auto">
+                    <ul class="flex lg:flex-row flex-col lg:items-center lg:gap-[2vw] gap-8 font-normal px-20">
                         <li class=" icons lg:flex overflow-hidden lg:hidden">
                             <ion-icon name="sunny"
                                 class="theme_btn ml-2 bottom-5 w-6 h-6 cursor-pointer h-7 w-7 text-yellow-500"
@@ -58,7 +57,7 @@
                                 up</button>
                         </li>
                         <li>
-                            <button class="bg-gradient lg:mt-0 lg:ml-10 mt-10">Get early access</button>
+                            <button class="bg-gradient border-0 lg:mt-0 lg:ml-10 mt-10">Get early access</button>
                         </li>
                         <li class=" icons lg:flex overflow-hidden hidden ">
                             <ion-icon name="sunny"
@@ -79,7 +78,7 @@
                 </div>
                 <div>
                     <ion-icon onclick="onToggleMenu(this)" name="menu"
-                        class=" menu_button text-3xl items-center cursor-pointer lg:hidden"></ion-icon>
+                        class="menu_button text-3xl items-center cursor-pointer lg:hidden"></ion-icon>
                 </div>
             </nav>
         </header>
@@ -87,10 +86,10 @@
         <!--Home section-->
         <section id="home" class="home_section flex items-center text-center justify-center">
         <ul class="py-2 mt-20">
-            <li class="text-white text-5xl py-3 font-semibold">Time is money, </li>
-            <li class="text-white text-5xl py-3 font-semibold">Create <span class="typing text-orange-400 font-semibold"></span></li>
+            <li class="text-white text-4xl py-3 font-normal lg:text-6xl lg:py-5">Time is money, </li>
+            <li class="text-white text-5xl py-3 font-semibold lg:text-7xl lg:py-5">Create <span class="typing text-orange-400 font-semibold"></span></li>
             <li class="px-6 mt-10">
-                <p class="text-white pt-5 text-3xl overflow-hidden">
+                <p class="text-white pt-5 text-2xl overflow-hidden">
                     "Boost Your Content Creation 
                     with <span class="text-orange-400 font-semibold">Matica</span>: Your Essential Tool 
                     for Easy & Streamlining Video Clip 
@@ -99,8 +98,10 @@
                     Effortlessly."
                 </p>
             </li>
-            <li class="py-5 mt-10">
-                <a class="text-white cursor-pointer bg-gradient-to-r from-gray-900 to-gray-800 py-4 px-4 text-center rounded-md text-xl">Learn more <!--<ion-icon name="construct" class="px-2 text-center text-xl justify-center"></ion-icon>--></a><span></span>
+            <li class="py-5 mt-18">
+                <input type="email" id="email" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg p-2.5 dark:bg-gray-700 dark:border-gray-600" placeholder="yourname@email.com" required>
+
+                <ion-icon name="mail" class="text-white cursor-pointer bg-gradient-to-r from-gray-900 to-gray-800 py-3 px-3 text-center rounded-2xl text-xl ml-2"></ion-icon>
             </li>
         </ul>
         

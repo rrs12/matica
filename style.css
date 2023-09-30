@@ -26,14 +26,11 @@ overflow-x: hidden;
 }
 
 body{
-  
   overflow-y: hidden;
 }
 
-.nav_bar{
- z-index: 999;
- background-color: #00000050; 
- color: white;
+.menu_button{
+  z-index: 10;
 }
 
 .overflow_hide{
@@ -44,13 +41,13 @@ body{
   background: linear-gradient(90deg, rgba(254,248,2,1) 0%, rgba(243,109,32,1) 100%);
   padding: 7px;
   border-radius: 50px;
+  border-color: white;
+  border-width: 2px;
   color: black;
 }
+
 .nav-radius{
     border-radius: 60px;
-}
-.menu_button{
-    z-index: 999;
 }
 
 .ig:hover{
@@ -72,7 +69,7 @@ body{
     justify-content: center;
     min-height: 100vh;
     background: #000;
-    height: 100vh !important;
+    height: 200vh !important;
     overflow: hidden;
 }
 

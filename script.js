@@ -5,13 +5,13 @@ const home_section = document.querySelector('.home_section')
 
 function onToggleMenu(e) {
     e.name = e.name === 'menu' ? 'arrow-forward' : 'menu'
-    navLinks.classList.toggle('left-[10%]')
+    navLinks.classList.toggle('left-[5%]')
     navLinks.classList.toggle('shadow')
-    navLinks.classList.toggle('nav_bar')
     navLinks.classList.toggle('bg-gray-900')
-    navLinks.classList.toggle('shadow-2xl')
     logo_text.classList.toggle('hidden')
     menu_button.classList.toggle('bg-gradient')
+    menu_button.classList.toggle('border-1')
+    menu_button.classList.toggle('ml-[400px]')
     home_section.classList.toggle('blur')
 }
 const theme_btn = document.querySelector('.theme_btn')
