@@ -20,3 +20,10 @@ function theme_change(e) {
     e.name = e.name === 'sunny' ? 'moon' : 'sunny'
     theme_btn.classList.toggle('text-gray-50')
 }
+
+var typed = new Typed(".typing", {
+    strings: ["Faster", "Better"],
+    typeSpeed: 80,
+    backSpeed: 80,
+    loop: true
+});
