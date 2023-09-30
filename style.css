@@ -64,9 +64,7 @@ body{
 .fb:hover{
   fill: #1f7bf2;
 }
-.icons{
-    top: 0vh;
-}   
+
 /**home**/
 #main{
     display: flex;
