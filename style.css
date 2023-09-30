@@ -19,7 +19,6 @@
   background: gray;
 }
 
-/* Main styles */
 
 
 *{
@@ -39,11 +38,7 @@ body{
 .overflow_hide{
   overflow: hidden;
 }
-.border-gradient {
-border: 3px solid #f36d20 ;
-padding: 7px;
-border-radius: 50px;
-}
+
 .bg-gradient{
   background: linear-gradient(90deg, rgba(254,248,2,1) 0%, rgba(243,109,32,1) 100%);
   padding: 7px;
@@ -58,7 +53,7 @@ border-radius: 50px;
 }
 
 .ig:hover{
-  fill: #bc2a8d;
+    fill: #bc2a8d;
 }
 
 .ld:hover{
