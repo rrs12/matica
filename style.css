@@ -81,3 +81,15 @@ body {
     width: 97%;
   }
 }
+
+.typed-cursor{
+  color:#f36d20;
+}
+
+.color_icon{
+  color: white}
+
+.float_right{
+  float: right;
+  margin-right: 25px;
+}
