@@ -38,18 +38,8 @@ body {
   overflow: hidden;
 }
 
-.bg-gradient {
-  background: linear-gradient(90deg, rgba(254, 248, 2, 1) 0%, rgba(243, 109, 32, 1) 100%);
-  padding: 7px;
-  border-radius: 50px;
-  border-color: white;
-  border-width: 2px;
-  color: black;
-}
 
-.nav-radius {
-  border-radius: 60px;
-}
+
 
 .ig:hover {
   fill: #bc2a8d;

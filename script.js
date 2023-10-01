@@ -10,9 +10,6 @@ function onToggleMenu(e) {
     navLinks.classList.toggle('md:left-[1%]')
     navLinks.classList.toggle('shadow')
     navLinks.classList.toggle('bg-gray-900')
-    logo_text.classList.toggle('hidden')
-    menu_button.classList.toggle('bg-gradient')
-    menu_button.classList.toggle('border-1')
     home_section.classList.toggle('hidden')
     main_navbar.classList.toggle('hidden')
 }
