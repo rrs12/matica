@@ -13,7 +13,14 @@
     <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
     <link rel="stylesheet" href="style.css">
-    </link>
+    <link href="https://owlcarousel2.github.io/OwlCarousel2/assets/owlcarousel/assets/owl.carousel.min.css"
+        rel="stylesheet">
+    <link href="https://owlcarousel2.github.io/OwlCarousel2/assets/owlcarousel/assets/owl.theme.default.min.css"
+        rel="stylesheet">
+    <script src="https://owlcarousel2.github.io/OwlCarousel2/assets/vendors/jquery.min.js">
+    </script>
+    <script src="https://owlcarousel2.github.io/OwlCarousel2/assets/owlcarousel/owl.carousel.js">
+    </script>
 
 </head>
 </head>
@@ -22,7 +29,8 @@
     <!--Navbar-->
     <div id="full-screen" class="overflow-hidden">
         <header class="nav_bar">
-            <nav class="flex justify-between items-center w-full px-4 mx-auto z-2 py-4 bg-gradient-to-r from-black to-gray-900 text-white overflow-hidden">
+            <nav
+                class="flex justify-between items-center w-full px-4 mx-auto z-2 py-4 bg-gradient-to-r from-black to-gray-900 text-white overflow-hidden">
                 <div class="logo_text">
                     <a href="#" class="flex items-center">
                         <img src="logo.png" class="h-16 mr-3" alt="Flowbite Logo" />
@@ -30,9 +38,11 @@
                             style="overflow: hidden">Matica</span>
                     </a>
                 </div>
-                <div class="transition-all lg:block hidden rounded-l-3xl overflow-hidden  nav-links lg:static absolute lg:min-h-fit min-h-[80vh] left-[-100%] top-[3%] lg:ml-10  lg:w-auto lg:py-2 flex-row  text-xl lg:text-base lg:mt-0 py-14 lg:ms-auto border-l-none border-r-xl" id="unhide">
+                <div class="transition-all lg:block hidden rounded-l-3xl overflow-hidden  nav-links lg:static absolute lg:min-h-fit min-h-[80vh] left-[-100%] top-[3%] lg:ml-10  lg:w-auto lg:py-2 flex-row  text-xl lg:text-base lg:mt-0 py-14 lg:ms-auto border-l-none border-r-xl"
+                    id="unhide">
 
-                    <ul class=" flex lg:flex-row flex-col lg:items-center lg:gap-[2vw] gap-8 font-normal px-20 overflow-hidden">
+                    <ul
+                        class=" flex lg:flex-row flex-col lg:items-center lg:gap-[2vw] gap-8 font-normal px-20 overflow-hidden">
                         <li class=" icons lg:flex overflow-hidden lg:hidden">
 
                             <ion-icon name="sunny"
@@ -73,50 +83,157 @@
                 </div>
                 <div>
                     <ion-icon onclick="onToggleMenu(this)" name="menu"
-                        class="menu_button bg-gradient-to-r from-yellow-400 to-orange-700 py-2 px-2 rounded text-3xl items-center cursor-pointer lg:hidden"></ion-icon>
+                        class="menu_button bg-gradient-to-r from-yellow-400 to-orange-700 py-2 px-2 rounded text-3xl items-center cursor-pointer lg:hidden">
+                    </ion-icon>
                 </div>
             </nav>
         </header>
 
         <!--Home section-->
         <section id="home" class="home_section flex items-center text-center justify-center">
-        <ul class="py-2 mt-20">
-            <li class="text-orange-400 text-xl md:text-4xl py-2 font-normal lg:text-6xl lg:py-5">Time is money </li>
-            <li class="text-white text-4xl md:text-5xl md:py-4 py-2 font-semibold lg:text-7xl lg:py-5">Create <span class="typing text-[#f36d20] font-semibold"></span></li>
-            <li class="px-6 mt-6">
-                <p class="text-white pt-5 text-md md:text-2xl overflow-hidden lg:px-10 lg:text-3xl">
-                    "Boost Your Content Creation 
-                    with <span class="text-orange-400 font-semibold">Matica</span>: Your Essential Tool 
-                    for Easy & Streamlining Video Clip 
-                    Management. Improve Your 
-                    Creativity, Source, and Edit 
-                    Effortlessly."
-                </p>
-            </li>
-            <li class="py-5 mt-8">
-                <form action="#" class="mx-24">
-                    <div class="items-center mx-auto mb-3 space-y-4 max-w-screen-sm sm:flex sm:space-y-0">
-                        <div class="relative w-full">
-                            <div class="flex absolute inset-y-0 left-0 items-center pl-3 pointer-events-none xs:text-sm">
-                                <svg class="w-5 h-5 text-gray-500 dark:text-gray-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"></path><path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"></path></svg>
+            <ul class="py-2 mt-20">
+                <li class="text-orange-400 text-xl md:text-4xl py-2 font-normal lg:text-6xl lg:py-5">Time is money </li>
+                <li class="text-white text-4xl md:text-5xl md:py-4 py-2 font-semibold lg:text-7xl lg:py-5">Create <span
+                        class="typing text-[#f36d20] font-semibold"></span></li>
+                <li class="px-6 mt-6">
+                    <p class="text-white pt-5 text-md md:text-2xl overflow-hidden lg:px-10 lg:text-3xl">
+                        "Boost Your Content Creation
+                        with <span class="text-orange-400 font-semibold">Matica</span>: Your Essential Tool
+                        for Easy & Streamlining Video Clip
+                        Management. Improve Your
+                        Creativity, Source, and Edit
+                        Effortlessly."
+                    </p>
+                </li>
+                <li class="py-5 mt-8">
+                    <form action="#" class="mx-24">
+                        <div class="items-center mx-auto mb-3 space-y-4 max-w-screen-sm sm:flex sm:space-y-0">
+                            <div class="relative w-full">
+                                <div
+                                    class="flex absolute inset-y-0 left-0 items-center pl-3 pointer-events-none xs:text-sm">
+                                    <svg class="w-5 h-5 text-gray-500 dark:text-gray-400" fill="currentColor"
+                                        viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z">
+                                        </path>
+                                        <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"></path>
+                                    </svg>
+                                </div>
+                                <input
+                                    class="block p-3 pl-10 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 sm:rounded-none sm:rounded-l-lg focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
+                                    placeholder="Enter your email" type="email" id="email" required="">
                             </div>
-                            <input class="block p-3 pl-10 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 sm:rounded-none sm:rounded-l-lg focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="Enter your email" type="email" id="email" required="">
+                            <div>
+                                <button type="submit"
+                                    class="flex items-center w-full justify-center py-3 px-5 text-sm font-medium text-center text-[#b35220] rounded-lg border cursor-pointer sm:rounded-none bg-[#0a0c22] sm:rounded-r-lg">Subscribe</button>
+                            </div>
                         </div>
-                        <div>
-                            <button type="submit" class="flex items-center justify-center py-3 px-5 text-sm font-medium text-center text-[#b35220] rounded-lg border cursor-pointer sm:rounded-none bg-[#0a0c22] sm:rounded-r-lg">Subscribe</button>
-                        </div>
-                    </div>  </form>            
+                    </form>
                 </li>
                 <li class="overflow-hidden object-right-bottom w-10 float_right">
-                    <ion-icon name="logo-facebook" class="ml-2 bottom-5 w-6 h-6 cursor-pointer fb color_icon"></ion-icon>
-                    <ion-icon name="logo-linkedin" class="ml-2 bottom-5 w-6 h-6 cursor-pointer ld color_icon"></ion-icon>
-                    <ion-icon name="logo-instagram" class="ml-2 bottom-5 w-6 h-6 cursor-pointer ig color_icon"></ion-icon>
+                    <ion-icon name="logo-facebook" class="ml-2 bottom-5 w-6 h-6 cursor-pointer fb color_icon">
+                    </ion-icon>
+                    <ion-icon name="logo-linkedin" class="ml-2 bottom-5 w-6 h-6 cursor-pointer ld color_icon">
+                    </ion-icon>
+                    <ion-icon name="logo-instagram" class="ml-2 bottom-5 w-6 h-6 cursor-pointer ig color_icon">
+                    </ion-icon>
                 </li>
-                
-        </ul>
-        
+
+            </ul>
+
+        </section>
+        <div class="owl-carousel owl-theme owl-loaded owl-drag">
+
+            <div class="owl-stage-outer">
+
+                <div class="owl-stage"
+                    style="transform: translate3d(-1527px, 0px, 0px); transition: all 0.25s ease 0s; width: 3334px;">
+
+                    <div class="owl-item cloned" style="width: 128.906px; margin-right: 10px;">
+                        <div class="item">
+                            <h4>1</h4>
+                        </div>
+                    </div>
+
+                    <div class="owl-item cloned" style="width: 128.906px; margin-right: 10px;">
+                        <div class="item">
+                            <h4>2</h4>
+                        </div>
+                    </div>
+
+                    <div class="owl-item cloned" style="width: 128.906px; margin-right: 10px;">
+                        <div class="item">
+                            <h4>3</h4>
+                        </div>
+                    </div>
+
+                    <div class="owl-item cloned" style="width: 128.906px; margin-right: 10px;">
+                        <div class="item">
+                            <h4>4</h4>
+                        </div>
+                    </div>
+
+                    <div class="owl-item cloned" style="width: 128.906px; margin-right: 10px;">
+                        <div class="item">
+                            <h4>5</h4>
+                        </div>
+                    </div>
+
+                    <div class="owl-item cloned" style="width: 128.906px; margin-right: 10px;">
+                        <div class="item">
+                            <h4>6</h4>
+                        </div>
+                    </div>
+
+                    <div class="owl-item" style="width: 128.906px; margin-right: 10px;">
+                        <div class="item">
+                            <h4>7</h4>
+                        </div>
+                    </div>
+                    <div class="owl-item" style="width: 128.906px; margin-right: 10px;">
+                        <div class="item">
+                            <h4>8</h4>
+                        </div>
+                    </div>
+
+                    <div class="owl-item" style="width: 128.906px; margin-right: 10px;">
+                        <div class="item">
+                            <h4>9</h4>
+                        </div>
+                    </div>
+
+                    <div class="owl-item" style="width: 128.906px; margin-right: 10px;">
+                        <div class="item">
+                            <h4>10</h4>
+                        </div>
+                    </div>
+                    <div class="owl-item" style="width: 128.906px; margin-right: 10px;">
+                        <div class="item">
+                            <h4>11</h4>
+                        </div>
+                    </div>
+
+                    <div class="owl-item active" style="width: 128.906px; margin-right: 10px;">
+                        <div class="item">
+                            <h4>12</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="owl-nav disabled">
+
+            </div>
+
+        </div>
+
+        <section id="features">
+
         </section>
     </div>
     <script src="script.js"></script>
+    <script src="carousel.js"></script>
+    <script src="jquery.min.js"></script>
+    <script src="owlcarousel/owl.carousel.min.js"></script>
 </body>
+
 </html>

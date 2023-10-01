@@ -76,20 +76,32 @@ body {
     width: 99%;
   }
 }
+
 @media screen and (max-width: 768px) {
   #unhide {
     width: 97%;
   }
 }
 
-.typed-cursor{
-  color:#f36d20;
+.typed-cursor {
+  color: #f36d20;
 }
 
-.color_icon{
-  color: white}
+.color_icon {
+  color: white
+}
 
-.float_right{
+.float_right {
   float: right;
   margin-right: 25px;
+}
+
+.owl-item {
+  width: 128.906px;
+  margin-right: 10px;
+  background: powderblue;
+}
+
+.owl-theme .owl-dots .owl-dot {
+  display: none !important;
 }
