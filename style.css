@@ -67,8 +67,12 @@ body {
 }
 
 #full-screen {
-  background-color: #000;
+  background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 39%, rgba(60,60,60,1) 100%);
   overflow-x: hidden;
+}
+
+#home{
+  height: 800px;
 }
 
 @media screen and (max-width: 1024px) {
