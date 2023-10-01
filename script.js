@@ -2,6 +2,7 @@ const navLinks = document.querySelector('.nav-links')
 const logo_text = document.querySelector('.logo_text')
 const menu_button = document.querySelector('.menu_button')
 const home_section = document.querySelector('.home_section')
+const main_navbar = document.querySelector('#unhide')
 
 function onToggleMenu(e) {
     e.name = e.name === 'menu' ? 'arrow-forward' : 'menu'
@@ -12,8 +13,9 @@ function onToggleMenu(e) {
     logo_text.classList.toggle('hidden')
     menu_button.classList.toggle('bg-gradient')
     menu_button.classList.toggle('border-1')
-    menu_button.classList.toggle('ml-[400px]')
+    menu_button.classList.toggle('ml-[300px]')
     home_section.classList.toggle('hidden')
+    main_navbar.classList.toggle('hidden')
 }
 const theme_btn = document.querySelector('.theme_btn')
 
