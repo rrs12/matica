@@ -32,4 +32,7 @@ var typed = new Typed(".typing", {
 function hide(){
     home_section.classList.toggle('hidden')
     features_section.classList.toggle('hidden')
-    main_navbar.classList.toggle('hidden')}
+    main_navbar.classList.toggle('hidden')
+    home_section.classList.toggle('lg:block')
+    features_section.classList.toggle('lg:block')
+}
