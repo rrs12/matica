@@ -21,25 +21,25 @@
 
 
 
-*{
-overflow-x: hidden;
+* {
+  overflow-x: hidden;
 }
 
-body{
+body {
   overflow-y: hidden;
   background-color: #000;
 }
 
-.menu_button{
+.menu_button {
   z-index: 10;
 }
 
-.overflow_hide{
+.overflow_hide {
   overflow: hidden;
 }
 
-.bg-gradient{
-  background: linear-gradient(90deg, rgba(254,248,2,1) 0%, rgba(243,109,32,1) 100%);
+.bg-gradient {
+  background: linear-gradient(90deg, rgba(254, 248, 2, 1) 0%, rgba(243, 109, 32, 1) 100%);
   padding: 7px;
   border-radius: 50px;
   border-color: white;
@@ -47,36 +47,47 @@ body{
   color: black;
 }
 
-.nav-radius{
-    border-radius: 60px;
+.nav-radius {
+  border-radius: 60px;
 }
 
-.ig:hover{
-    fill: #bc2a8d;
+.ig:hover {
+  fill: #bc2a8d;
 }
 
-.ld:hover{
+.ld:hover {
   fill: #0077b7;
 }
 
-.fb:hover{
+.fb:hover {
   fill: #1f7bf2;
 }
 
 /**home**/
-#main{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    min-height: 100vh;
-    background: #000;
-    height: 200vh !important;
-    overflow: hidden;
-    overflow-y: hidden;
-    overflow-x: hidden;
+#main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: #000;
+  height: 200vh !important;
+  overflow: hidden;
+  overflow-y: hidden;
+  overflow-x: hidden;
 }
 
-#full-screen{
-    background-color: #000;
-    overflow-x: hidden;
+#full-screen {
+  background-color: #000;
+  overflow-x: hidden;
+}
+
+@media screen and (max-width: 1024px) {
+  #unhide {
+    width: 99%;
   }
+}
+@media screen and (max-width: 768px) {
+  #unhide {
+    width: 97%;
+  }
+}

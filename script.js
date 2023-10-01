@@ -13,7 +13,6 @@ function onToggleMenu(e) {
     logo_text.classList.toggle('hidden')
     menu_button.classList.toggle('bg-gradient')
     menu_button.classList.toggle('border-1')
-    menu_button.classList.toggle('ml-[300px]')
     home_section.classList.toggle('hidden')
     main_navbar.classList.toggle('hidden')
 }
