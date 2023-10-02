@@ -58,9 +58,6 @@ body {
   animation: gradient 15s ease infinite;
 }
 
-#home{
-  height: 800px;
-}
 
 @media screen and (max-width: 1024px) {
   #unhide {
