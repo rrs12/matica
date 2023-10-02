@@ -1,6 +1,6 @@
 $('.owl-carousel').owlCarousel({
     loop: true,
-    margin: 5,
+    margin: 15,
     nav: false,
     dots: false,
     stagePadding: 50,
@@ -12,7 +12,7 @@ $('.owl-carousel').owlCarousel({
             items : 1
 
         },
-        917 : {
+        600 : {
             items : 2
 
         },
