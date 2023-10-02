@@ -30,6 +30,11 @@ var typed = new Typed(".typing", {
 });
 
 function hide(){
+    menu_button.name =menu_button=== 'menu' ? 'arrow-forward' : 'menu'
+    navLinks.classList.toggle('left-[3%]')
+    navLinks.classList.toggle('md:left-[1%]')
+    navLinks.classList.toggle('shadow')
+    navLinks.classList.toggle('bg-gray-900')
     home_section.classList.toggle('hidden')
     features_section.classList.toggle('hidden')
     main_navbar.classList.toggle('hidden')
