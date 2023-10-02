@@ -6,7 +6,7 @@ const features_section = document.querySelector('.features')
 const main_navbar = document.querySelector('#unhide')
 
 function onToggleMenu(e) {
-    e.name = e.name === 'menu' ? 'arrow-forward' : 'menu'
+    e.name = e.name === 'menu' ? 'close' : 'menu'
     navLinks.classList.toggle('left-[3%]')
     navLinks.classList.toggle('md:left-[1%]')
     navLinks.classList.toggle('shadow')
@@ -30,7 +30,7 @@ var typed = new Typed(".typing", {
 });
 
 function hide(){
-    menu_button.name =menu_button=== 'menu' ? 'arrow-forward' : 'menu'
+    menu_button.name =menu_button=== 'menu' ? 'close' : 'menu'
     navLinks.classList.toggle('left-[3%]')
     navLinks.classList.toggle('md:left-[1%]')
     navLinks.classList.toggle('shadow')
