@@ -51,6 +51,8 @@ body {
   overflow-x: hidden;
   background: linear-gradient(267.8deg, #000000 -29.05%, rgba(0, 0, 0, 0.92) 122.61%);
   background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+
 }
 
 
@@ -79,6 +81,41 @@ body {
   margin-right: 25px;
 }
 
+
+.owl-item {
+  width: auto;
+  background: #ff9456;
+  padding: 10px 5px ;
+  border-radius: 10px ;
+  
+}
+
+.owl-item h2{
+  font-size: 3vh;
+}
+
+.owl-item h4{
+  font-size: 2vh;
+}
+
+
+.owl-theme .owl-dots .owl-dot {
+  display: none !important;
+}
+
+  @keyframes gradient {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+
 #features{
   background: #ffb477;
 } 
+
