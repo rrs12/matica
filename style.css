@@ -88,7 +88,17 @@ body {
   width: 150px;
   margin-right: 10px;
   background: #ff9456;
+  
 }
+
+.owl-item h2{
+  font-size: 3vh;
+}
+
+.owl-item h4{
+  font-size: 2vh;
+}
+
 
 .owl-theme .owl-dots .owl-dot {
   display: none !important;
@@ -105,4 +115,5 @@ body {
       background-position: 0% 50%;
     }
   }
+  
   
