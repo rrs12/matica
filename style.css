@@ -85,9 +85,9 @@ body {
 }
 
 .owl-item {
-  width: 128.906px;
+  width: 150px;
   margin-right: 10px;
-  background: powderblue;
+  background: #ff9456;
 }
 
 .owl-theme .owl-dots .owl-dot {
