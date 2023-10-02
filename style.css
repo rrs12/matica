@@ -27,7 +27,9 @@
 
 body {
   overflow-y: hidden;
-  background-color: #000;
+  background: linear-gradient(267.8deg, #000000 -29.05%, rgba(0, 0, 0, 0.92) 122.61%);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
 }
 
 .menu_button {
@@ -54,21 +56,12 @@ body {
 }
 
 /**home**/
-#main {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  min-height: 100vh;
-  background: #000;
-  height: 200vh !important;
-  overflow: hidden;
-  overflow-y: hidden;
-  overflow-x: hidden;
-}
 
 #full-screen {
-  background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 39%, rgba(60,60,60,1) 100%);
   overflow-x: hidden;
+  background: linear-gradient(267.8deg, #000000 -29.05%, rgba(0, 0, 0, 0.92) 122.61%);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
 }
 
 #home{
@@ -109,3 +102,16 @@ body {
 .owl-theme .owl-dots .owl-dot {
   display: none !important;
 }
+
+  @keyframes gradient {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  
