@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Poppins&display=swap');
+
+
 /* width */
 ::-webkit-scrollbar {
   width: 10px;
@@ -30,6 +33,7 @@ body {
   background: linear-gradient(267.8deg, #000000 -29.05%, rgba(0, 0, 0, 0.92) 122.61%);
   background-size: 400% 400%;
   animation: gradient 15s ease infinite;
+  font-family: 'Inter', sans-serif;
 }
 
 .menu_button {
@@ -40,19 +44,9 @@ body {
   overflow: hidden;
 }
 
-
-
-
-.ig:hover {
-  fill: #bc2a8d;
-}
-
-.ld:hover {
-  fill: #0077b7;
-}
-
-.fb:hover {
-  fill: #1f7bf2;
+.font-poppins{
+  font-family: 'Poppins';
+  text-transform: uppercase;
 }
 
 /**home**/
