@@ -93,28 +93,6 @@ body {
 }
 
 
-.owl-item {
-  width: auto;
-  background: #ff9456;
-  padding: 10px 5px ;
-  border-radius: 10px ;
-  text-align: center;
-  
-}
-
-.owl-item h2{
-  font-size: 3vh;
-}
-
-.owl-item h4{
-  font-size: 2vh;
-}
-
-
-.owl-theme .owl-dots .owl-dot {
-  display: none !important;
-}
-
   @keyframes gradient {
     0% {
       background-position: 0% 50%;
