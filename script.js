@@ -41,4 +41,4 @@ function hide(){
     main_navbar.classList.toggle('hidden')
     home_section.classList.toggle('lg:block')
     features_section.classList.toggle('lg:block')
-}
+} 
