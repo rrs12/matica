@@ -107,6 +107,10 @@ body {
     }
   }
 
+.text-white {
+  color: white;
+}
+
 #features{
   background: #000;
 } 
