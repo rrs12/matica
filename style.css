@@ -73,6 +73,8 @@ body {
   }
 }
 
+
+
 @media screen and (max-width: 768px) {
   #unhide {
     width: 97%;
@@ -108,4 +110,3 @@ body {
 #features{
   background: #000;
 } 
-
