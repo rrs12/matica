@@ -46,7 +46,7 @@ body {
   text-transform: uppercase;
 }
 
-/*home*/
+
 
 #full-screen {
   overflow-x: hidden;
@@ -109,9 +109,11 @@ body {
 
 
 #features{
-  background: #000;
+  background: rgb(8, 8, 8);
 }
-
+.bg-gray{
+  background:  #0c0c0c;
+}
 .border-radius{
   border-radius: 10px;
 }
