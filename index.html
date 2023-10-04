@@ -13,14 +13,6 @@
     <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
     <link rel="stylesheet" href="style.css">
-    <link href="https://owlcarousel2.github.io/OwlCarousel2/assets/owlcarousel/assets/owl.carousel.min.css"
-        rel="stylesheet">
-    <link href="https://owlcarousel2.github.io/OwlCarousel2/assets/owlcarousel/assets/owl.theme.default.min.css"
-        rel="stylesheet">
-    <script src="https://owlcarousel2.github.io/OwlCarousel2/assets/vendors/jquery.min.js">
-    </script>
-    <script src="https://owlcarousel2.github.io/OwlCarousel2/assets/owlcarousel/owl.carousel.js">
-    </script>
 </head>
 </head>
 
@@ -36,11 +28,11 @@
                             class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white overflow-hidden font-poppins xl:3xl ">Matica</span>
                     </a>
                 </div>
-                <div class="bg-transparent transition-all lg:block hidden rounded-l-3xl overflow-hidden  nav-links lg:static absolute lg:min-h-fit min-h-[80vh] left-[-100%] top-[3%] lg:ml-10  lg:w-auto lg:py-2 flex-row  text-xl lg:text-base lg:mt-0 py-14 border-l-none border-r-xl ms-auto"
+                <div class="xl:text-xl bg-transparent transition-all lg:block hidden rounded-l-3xl overflow-hidden  nav-links lg:static absolute lg:min-h-fit min-h-[80vh] left-[-100%] top-[3%] lg:ml-10  lg:py-2 flex-row  text-xl lg:text-base lg:mt-0 py-14 border-l-none border-r-xl"
                     id="unhide">
 
                     <ul 
-                        class="xl:text-xl justify-end flex lg:flex-row flex-col lg:items-center lg:gap-[2vw] gap-8 font-normal overflow-hidden px-20 lg:px-0">
+                        class=" flex lg:flex-row flex-col lg:items-center lg:gap-[2vw] gap-8 font-normal overflow-hidden px-20">
                         <li class=" icons lg:flex overflow-hidden lg:hidden">
 
                             <ion-icon name="sunny"
@@ -49,7 +41,7 @@
                             <ion-icon name="person"
                                 class="hidden ml-2 bottom-5 w-6 h-6 cursor-pointer h-7 w-7 text-yellow-500"></ion-icon>
                         </li>
-                        <li class="cursor-pointer overflow-hidden lg:pl-52">
+                        <li class="cursor-pointer overflow-hidden">
                             <a class=" hover:text-orange-400 lg:py-0 link_navbar" onclick="hide()"
                                 href="#features">Features</a>
                         </li>
@@ -59,19 +51,12 @@
                         <li class="cursor-pointer overflow-hidden">
                             <a class=" hover:text-orange-400" href="#">Get in touch</a>
                         </li>
-                        <li class=" icons lg:flex overflow-hidden hidden lg:ml-80">
-                            <ion-icon name="sunny"
-                                class="theme_btn ml-2 bottom-5 w-6 h-6 cursor-pointer h-7 w-7 text-yellow-500"
-                                onclick="theme_change(this)"></ion-icon>
-                            <ion-icon name="person"
-                                class="hidden ml-2 bottom-5 w-6 h-6 cursor-pointer h-7 w-7 text-yellow-500"></ion-icon>
-                        </li>
                         <li>
                             <button
-                                class="font-bold py-2 overflow-hidden rounded-md lg:text-2xl lg:px-2 bg-gradient-to-r from-[#fdee04] to-[#f36f20] bg-clip-text text-transparent">Sign
+                                class="lg:hidden font-bold py-2 overflow-hidden rounded-md lg:text-2xl lg:px-2 bg-gradient-to-r from-[#fdee04] to-[#f36f20] bg-clip-text text-transparent">Sign
                                 up</button>
                         </li>
-
+                    
                         <li class="lg:hidden mt-20 overflow-hidden ">
                             <ion-icon name="logo-facebook"
                                 class="ml-2 bottom-5 w-6 h-6 cursor-pointer hover:text-orange-400"></ion-icon>
@@ -83,7 +68,41 @@
 
                     </ul>
                 </div>
-                <div>
+                <div class="flex items-center">
+                    <li class="list-none"><button class="text-white  font-medium rounded-lg text-sm px-4 py-2.5 text-center inline-flex items-center" type="button" data-dropdown-toggle="dropdown">EN <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg></button>
+                        <!-- Dropdown menu -->
+                        <div class="hidden bg-white text-base z-50 list-none divide-y divide-gray-100 rounded shadow my-4" id="dropdown">
+                            
+                            <ul class="py-1" aria-labelledby="dropdown">
+                              <li>
+                                <a href="#" class="text-sm hover:bg-gray-100 text-gray-700 block px-4 py-2">ZH</a>
+                              </li>
+                              <li>
+                                <a href="#" class="text-sm hover:bg-gray-100 text-gray-700 block px-4 py-2">ES</a>
+                              </li>
+                              <li>
+                                <a href="#" class="text-sm hover:bg-gray-100 text-gray-700 block px-4 py-2">HI</a>
+                              </li>
+                              <li>
+                                <a href="#" class="text-sm hover:bg-gray-100 text-gray-700 block px-4 py-2">PT</a>
+                              </li>
+                              <li>
+                                <a href="#" class="text-sm hover:bg-gray-100 text-gray-700 block px-4 py-2">FR</a>
+                              </li>
+                            </ul>
+                        </div></li>
+                    <li class="list-none icons lg:flex overflow-hidden hidden justify-end lg:pr-2" >
+                        <ion-icon name="sunny"
+                            class="theme_btn ml-2 bottom-5 w-6 h-6 cursor-pointer h-7 w-7 text-yellow-500"
+                            onclick="theme_change(this)"></ion-icon>
+                        <ion-icon name="person"
+                            class="hidden ml-2 bottom-5 w-6 h-6 cursor-pointer h-7 w-7 text-yellow-500"></ion-icon>
+                    </li>
+                    <li class="list-none lg:flex hidden">
+                        <button
+                            class=" font-bold py-2 overflow-hidden rounded-md lg:text-2xl lg:px-2 bg-gradient-to-r from-[#fdee04] to-[#f36f20] bg-clip-text text-transparent">Sign
+                            up</button>
+                    </li>
                     <ion-icon onclick="onToggleMenu(this)" name="menu"
                         class="menu_button bg-gradient-to-r from-yellow-400 to-orange-700 py-2 px-2 rounded text-3xl items-center cursor-pointer lg:hidden">
                     </ion-icon>
@@ -92,7 +111,7 @@
         </header>
 
         <!--Home section-->
-        <section id="home" class="home_section flex items-center text-center justify-center lg:mt-2 mt-20 lg:mb-0 mb-10">
+        <section id="home" class="home_section flex items-center text-center justify-center lg:mt-2 mt-20 lg:mb-0 mb-10 w-full">
             <ul class="py-2">
                 <li class="text-orange-400 text-xl md:text-3xl py-0 font-normal lg:text-5xl lg:py-5">Time is money </li>
                 <li class="text-white text-5xl md:text-7xl md:py-4 py-2 font-extrabold lg:text-9xl lg:py-5">Create <span
@@ -102,7 +121,7 @@
                         "Boost Your Content Creation
                         with <span class="text-orange-400 font-semibold">Matica</span>: <br> Your Essential Tool
                         for Easy & Streamlining Video Clip
-                        Management. Improve Your
+                        Management. <br> Improve Your
                         Creativity, Source, and Edit
                         Effortlessly."
                     </p>
@@ -249,6 +268,9 @@
 
     </section>
     <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@preline/preline@1.0.0/dist/hs-ui.bundle.min.js"></script>
+    <script src="https://unpkg.com/@themesberg/flowbite@latest/dist/flowbite.bundle.js"></script>
+
 
 </body>
 
