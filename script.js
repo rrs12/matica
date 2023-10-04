@@ -34,7 +34,7 @@ function hide(){
     navLinks.classList.toggle('left-[3%]')
     navLinks.classList.toggle('md:left-[1%]')
     navLinks.classList.toggle('shadow')
-    navLinks.classList.toggle('sm:bg-gray-900')
+    navLinks.classList.toggle('bg-gray-900')
     navLinks.classList.toggle('lg:bg-transparent')
     home_section.classList.toggle('hidden')
     features_section.classList.toggle('hidden')
