@@ -29,8 +29,8 @@ var typed = new Typed(".typing", {
     loop: true
 });
 
-function hide(){
-    menu_button.name =menu_button=== 'menu' ? 'close' : 'menu'
+function hide() {
+    menu_button.name = menu_button === 'menu' ? 'close' : 'menu'
     navLinks.classList.toggle('left-[3%]')
     navLinks.classList.toggle('md:left-[1%]')
     navLinks.classList.toggle('shadow')
@@ -41,4 +41,20 @@ function hide(){
     main_navbar.classList.toggle('hidden')
     home_section.classList.toggle('lg:block')
     features_section.classList.toggle('lg:block')
-} 
+}
+
+var toTopButton = document.getElementById("to-top-button");
+
+// When the user scrolls down 200px from the top of the document, show the button
+window.onscroll = function () {
+    if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+        toTopButton.classList.remove("hidden");
+    } else {
+        toTopButton.classList.add("hidden");
+    }
+}
+
+// When the user clicks on the button, smoothy scroll to the top of the document
+function goToTop() {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+}

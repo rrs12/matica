@@ -90,8 +90,9 @@ body {
 }
 
 .float_right {
-  float: right;
-
+  position: absolute;
+  top: 85%;
+  right: 2%;
 }
 
 
