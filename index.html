@@ -26,21 +26,21 @@
 
 <body class="overflow-hidden">
     <!--Navbar-->
-    <div id="full-screen" class="overflow-hidden">
+    <div id="full-screen" class="overflow-hidden h-screen">
         <header class="nav_bar">
-            <nav class="flex justify-between items-center w-full px-4 mx-auto z-2 py-4 text-white overflow-hidden">
+            <nav class="navbar flex justify-between items-center w-full px-4 mx-auto z-2 py-4  text-white overflow-hidden">
                 <div class="logo_text">
                     <a href="#" class="flex items-center">
-                        <img src="logo.png" class="h-14 mr-3" \ />
+                        <img src="logo.png" class="h-14 mr-3 xl:h-16" />
                         <span
-                            class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white overflow-hidden font-poppins ">Matica</span>
+                            class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white overflow-hidden font-poppins xl:3xl ">Matica</span>
                     </a>
                 </div>
-                <div class="bg-transparent transition-all lg:block hidden rounded-l-3xl overflow-hidden  nav-links lg:static absolute lg:min-h-fit min-h-[80vh] left-[-100%] top-[3%] lg:ml-10  lg:w-auto lg:py-2 flex-row  text-xl lg:text-base lg:mt-0 py-14 border-l-none border-r-xl"
+                <div class="bg-transparent transition-all lg:block hidden rounded-l-3xl overflow-hidden  nav-links lg:static absolute lg:min-h-fit min-h-[80vh] left-[-100%] top-[3%] lg:ml-10  lg:w-auto lg:py-2 flex-row  text-xl lg:text-base lg:mt-0 py-14 border-l-none border-r-xl ms-auto"
                     id="unhide">
 
-                    <ul
-                        class=" flex lg:flex-row flex-col lg:items-center lg:gap-[2vw] gap-8 font-normal overflow-hidden px-20 lg:px-0">
+                    <ul 
+                        class="xl:text-xl justify-end flex lg:flex-row flex-col lg:items-center lg:gap-[2vw] gap-8 font-normal overflow-hidden px-20 lg:px-0">
                         <li class=" icons lg:flex overflow-hidden lg:hidden">
 
                             <ion-icon name="sunny"
@@ -49,12 +49,9 @@
                             <ion-icon name="person"
                                 class="hidden ml-2 bottom-5 w-6 h-6 cursor-pointer h-7 w-7 text-yellow-500"></ion-icon>
                         </li>
-                        <li class="cursor-pointer overflow-hidden lg:ml-40">
+                        <li class="cursor-pointer overflow-hidden lg:pl-52">
                             <a class=" hover:text-orange-400 lg:py-0 link_navbar" onclick="hide()"
                                 href="#features">Features</a>
-                        </li>
-                        <li class="cursor-pointer overflow-hidden">
-                            <a class=" hover:text-orange-400" href="#">About us</a>
                         </li>
                         <li class="cursor-pointer overflow-hidden">
                             <a class=" hover:text-orange-400" href="#">Pricing</a>
@@ -62,7 +59,7 @@
                         <li class="cursor-pointer overflow-hidden">
                             <a class=" hover:text-orange-400" href="#">Get in touch</a>
                         </li>
-                        <li class=" icons lg:flex overflow-hidden hidden lg:pl-80 ">
+                        <li class=" icons lg:flex overflow-hidden hidden lg:ml-80">
                             <ion-icon name="sunny"
                                 class="theme_btn ml-2 bottom-5 w-6 h-6 cursor-pointer h-7 w-7 text-yellow-500"
                                 onclick="theme_change(this)"></ion-icon>
@@ -154,13 +151,12 @@
     <!--features-->
     <section id="features" class="features">
         <h1
-            class="text-gray-50 pt-10 text-3xl px-5 pb-4 mx-auto text-center font-semibold leading-none tracking-tight text-black md:text-5xl lg:text-6xl">
+            class="text-white mb-4 pt-10 text-3xl px-5 pb-10 mx-auto text-center font-semibold leading-none tracking-tight text-black md:text-5xl lg:text-6xl">
             With Matica, You get these<span class="text-[#ff7701]"> amazing features.</span></h1>
-        <hr class="w-48 h-1 mx-auto my-4 bg-gray-100 border-0 rounded md:my-10 dark:bg-gray-700">
 
-        <div class="px-4 py-8 mx-auto max-w-xl md:max-w-full lg:max-w-screen-2xl md:px-24 lg:px-8 lg:py-20 ">
+        <div class="px-4 py-8 mx-auto max-w-xl md:max-w-full lg:max-w-screen-2xl md:px-24 lg:px-8 lg:py-20">
             <div class="grid gap-8 row-gap-8 sm:grid-cols-2 lg:grid-cols-3">
-                <div class="duration-200 border-radius border-gray-800 border-2 p-3 hover:border-[#f58748] bg-gray">
+                <div class="duration-200 border-radius border-gray-300 border-2 p-3 hover:border-[#f36d20]">
                     <div class="flex items-center justify-center w-[50px] h-[40px] mb-4 rounded-full bg-indigo-50">
                         <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com/ License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M256 192l-39.5-39.5c4.9-12.6 7.5-26.2 7.5-40.5C224 50.1 173.9 0 112 0S0 50.1 0 112s50.1 112 112 112c14.3 0 27.9-2.7 40.5-7.5L192 256l-39.5 39.5c-12.6-4.9-26.2-7.5-40.5-7.5C50.1 288 0 338.1 0 400s50.1 112 112 112s112-50.1 112-112c0-14.3-2.7-27.9-7.5-40.5L499.2 76.8c7.1-7.1 7.1-18.5 0-25.6c-28.3-28.3-74.1-28.3-102.4 0L256 192zm22.6 150.6L396.8 460.8c28.3 28.3 74.1 28.3 102.4 0c7.1-7.1 7.1-18.5 0-25.6L342.6 278.6l-64 64zM64 112a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm48 240a48 48 0 1 1 0 96 48 48 0 1 1 0-96z"/></svg></div>
                     <h6 class="mb-2 font-semibold md:text-lg leading-5 text-[#f36f20]">Video Trimming</h6>
@@ -169,7 +165,7 @@
                         video to suit their preferences.
                     </p>
                 </div>
-                <div class="duration-200 border-radius border-gray-800 border-2 p-3 hover:border-[#f58748] bg-gray">
+                <div class="duration-200 border-radius border-gray-300 border-2 p-3 hover:border-[#f36d20]">
                     <div class="flex items-center justify-center w-[50px] h-[40px] mb-4 rounded-full bg-indigo-50">
                         <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 576 512">
                             <!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com/ License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
@@ -182,7 +178,7 @@
                         beginners. </p>
                 </div>
 
-                <div class="duration-200 border-radius border-gray-800 border-2 p-3 hover:border-[#f58748] bg-gray">
+                <div class="duration-200 border-radius border-gray-300 border-2 p-3 hover:border-[#f36d20]">
                     <div class="flex items-center justify-center w-[50px] h-[40px] mb-4 rounded-full bg-indigo-50">
                         <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 640 512">
                             <!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com/ License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
@@ -195,7 +191,7 @@
                         linked content seamlessly. </p>
                 </div>
 
-                <div class="duration-200 border-radius border-gray-800 border-2 p-3 hover:border-[#f58748] bg-gray">
+                <div class="duration-200 border-radius border-gray-300 border-2 p-3 hover:border-[#f36d20]">
                     <div class="flex items-center justify-center w-[50px] h-[40px] mb-4 rounded-full bg-indigo-50">
                         <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512">
                             <!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com/ License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
@@ -208,7 +204,7 @@
                         the cloud for easy access.</p>
                 </div>
 
-                <div class="duration-200 border-radius border-gray-800 border-2 p-3 hover:border-[#f58748] bg-gray">
+                <div class="duration-200 border-radius border-gray-300 border-2 p-3 hover:border-[#f36d20]">
                     <div class="flex items-center justify-center w-[50px] h-[40px] mb-4 rounded-full bg-indigo-50">
                         <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 640 512">
                             <!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com/ License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
@@ -221,7 +217,7 @@
                         Additionally, users can leave comments on videos to communicate their intended actions.
                 </div>
 
-                <div class="duration-200 border-radius border-gray-800 border-2 p-3 hover:border-[#f58748] bg-gray">
+                <div class="duration-200 border-radius border-gray-300 border-2 p-3 hover:border-[#f36d20]">
                     <div class="flex items-center justify-center w-[50px] h-[40px] mb-4 rounded-full bg-indigo-50">
                         <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 576 512">
                             <!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com/ License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
@@ -233,7 +229,7 @@
                         Generate automatic captions with the option to easily edit them for quicker results
                 </div>
 
-                <div class="duration-200 border-radius border-gray-800 border-2 p-3 hover:border-[#f58748] bg-gray">
+                <div class="duration-200 border-radius border-gray-300 border-2 p-3 hover:border-[#f36d20]">
                     <div class="flex items-center justify-center w-[50px] h-[40px] mb-4 rounded-full bg-indigo-50">
                         <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 576 512">
                             <!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com/ License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
@@ -252,15 +248,8 @@
         </div>
 
     </section>
-
-    <!--about-->
-    <section class="about-sec" id="about-sec">
-        <h1
-            class="text-gray-50 pt-10 text-3xl px-5 pb-4 mx-auto text-center font-semibold leading-none tracking-tight text-black md:text-5xl lg:text-6xl">
-            About<span class="text-[#ff7701]"> Matica.</span></h1>
-            <hr class="w-48 h-1 mx-auto my-4 bg-gray-100 border-0 rounded md:my-10 dark:bg-gray-700">
-    </section>
     <script src="script.js"></script>
+
 </body>
 
 </html>
