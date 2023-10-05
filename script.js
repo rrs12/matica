@@ -58,3 +58,14 @@ window.onscroll = function () {
 function goToTop() {
     window.scrollTo({ top: 0, behavior: 'smooth' });
 }
+
+// redirect links
+function discord(){
+    window.open("https://discord.gg/94cbgpS3ex")
+}
+function X(){
+    window.open("https://twitter.com")
+}
+function instagram(){
+    window.open("https://instagram.com")
+}

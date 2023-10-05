@@ -28,6 +28,7 @@
                         <img src="logo.png" class="sm:h-14 xs:-ml-2 xs:mr-2 sm:mr-3 xl:h-16 h-12" />
                         <span
                             class="self-center sm:text-2xl font-semibold whitespace-nowrap dark:text-white overflow-hidden font-poppins xl:3xl xs:text-base">Matica</span>
+                            <span class="self-center ml-3 px-1 py-1 md:px-2 border-radius bg-white text-black text-xs whitespace-nowrap overflow-hidden font-poppins">beta</span>
                     </a>
                 </div>
                 <div class="xl:text-xl bg-transparent transition-all lg:block hidden rounded-l-3xl overflow-hidden  nav-links lg:static absolute lg:min-h-fit min-h-[80vh] left-[-100%] top-[3%] lg:ml-10  lg:py-2 flex-row  text-xl lg:text-base lg:mt-0 py-14 border-l-none border-r-xl"
@@ -45,10 +46,10 @@
                         </li>
                         <li class="cursor-pointer overflow-hidden">
                             <a class=" hover:text-orange-400 lg:py-0 link_navbar" onclick="hide()"
-                                href="#features">Features</a>
+                                href="#about-sec">About</a>
                         </li>
                         <li class="cursor-pointer overflow-hidden">
-                            <a class=" hover:text-orange-400" href="#">Pricing</a>
+                            <a class=" hover:text-orange-400" href="#">Features</a>
                         </li>
                         <li class="cursor-pointer overflow-hidden">
                             <a class=" hover:text-orange-400" href="#">Get in touch</a>
@@ -59,13 +60,10 @@
                                 up</a>
                         </li>
 
-                        <li class="lg:hidden mt-20 overflow-hidden ">
-                            <ion-icon name="logo-discord"
-                                class="ml-2 bottom-5 w-6 h-6 cursor-pointer hover:text-orange-400"></ion-icon>
-                            <ion-icon name="logo-linkedin"
-                                class="ml-2 bottom-5 w-6 h-6 cursor-pointer hover:text-orange-400"></ion-icon>
-                            <ion-icon name="logo-instagram"
-                                class="ml-2 bottom-5 w-6 h-6 cursor-pointer hover:text-orange-400"></ion-icon>
+                        <li class="lg:hidden mt-20 overflow-hidden">
+                            <i class="fa-brands fa-x-twitter   text-white w-6 h-6 cursor-pointer hover:text-orange-400" onclick="X()"></i>
+                            <i class="fa-brands fa-discord ml-1 text-white w-6 h-6 cursor-pointer hover:text-orange-400" onclick="discord()"></i>
+                            <i class="fa-brands fa-instagram ml-2  text-white w-6 h-6 cursor-pointer hover:text-orange-400" onclick="instagram()"></i>
                         </li>
 
                     </ul>
@@ -167,13 +165,9 @@
                     </form>
                 </li>
                 <li class="overflow-hidden w-10 float_right">
-                    <ion-icon name="logo-discord" class="ml-2 bottom-5 w-6 h-6 cursor-pointer hover:text-orange-400 color_icon"></ion-icon>
-                    <ion-icon name="logo-twitter"
-                        class="ml-2 bottom-5 w-6 h-6 cursor-pointer hover:text-orange-400 color_icon">
-                    </ion-icon>
-                    <ion-icon name="logo-instagram"
-                        class="ml-2 bottom-5 w-6 h-6 cursor-pointer hover:text-orange-400 color_icon">
-                    </ion-icon>
+                    <i class="fa-brands fa-x-twitter ml-2  text-white w-6 h-6 cursor-pointer hover:text-orange-400" onclick="X()"></i>
+                    <i class="fa-brands fa-discord ml-2  text-white w-6 h-6 cursor-pointer hover:text-orange-400" onclick="discord()"></i>
+                    <i class="fa-brands fa-instagram ml-2  text-white w-6 h-6 cursor-pointer hover:text-orange-400" onclick="instagram()"></i>
                 </li>
 
             </ul>
@@ -184,8 +178,21 @@
     <button id="to-top-button" onclick="goToTop()" title="Go To Top"
         class="animate_animated hidden fixed z-90 bottom-8 right-2 md:right-8 lg:w-16 lg:h-16 lg:text-3xl border-0 w-12 h-12 rounded-full drop-shadow-md bg-[#f36d20] text-white text-xl font-bold">&uarr;</button>
 
-    <!--features-->
-    <section id="features" class="features">
+   
+
+    <!--about-->
+    <section class="about-sec" id="about-sec">
+        <h1
+            class="text-gray-50 pt-10 text-3xl px-5 pb-4 mx-auto text-center font-semibold leading-none tracking-tight text-black md:text-5xl lg:text-6xl">
+            About<span class="text-[#ff7701]"> Matica.</span></h1>
+        <hr class="w-48 h-1 mx-auto my-4 bg-gray-100 border-0 rounded md:my-10 dark:bg-gray-700">
+        <div>
+
+        </div>
+    </section>
+
+     <!--features-->
+     <section id="features" class="features">
         <h1
             class="text-gray-50 pt-10 text-3xl px-5 pb-4 mx-auto text-center font-semibold leading-none tracking-tight text-black md:text-5xl lg:text-6xl">
             With Matica, You get these<span class="text-[#ff7701]"> amazing features.</span></h1>
@@ -295,14 +302,6 @@
 
         </div>
 
-    </section>
-
-    <!--about-->
-    <section class="about-sec" id="about-sec">
-        <h1
-            class="text-gray-50 pt-10 text-3xl px-5 pb-4 mx-auto text-center font-semibold leading-none tracking-tight text-black md:text-5xl lg:text-6xl">
-            About<span class="text-[#ff7701]"> Matica.</span></h1>
-        <hr class="w-48 h-1 mx-auto my-4 bg-gray-100 border-0 rounded md:my-10 dark:bg-gray-700">
     </section>
     <script src="script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@preline/preline@1.0.0/dist/hs-ui.bundle.min.js"></script>
