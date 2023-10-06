@@ -8,7 +8,7 @@ const main_navbar = document.querySelector('#unhide')
 function onToggleMenu(e) {
     e.name = e.name === 'menu' ? 'close' : 'menu'
     navLinks.classList.toggle('left-[3%]')
-    
+
     navLinks.classList.toggle('shadow')
     navLinks.classList.toggle('bg-[#0c0c0c]')
     home_section.classList.toggle('hidden')
@@ -56,16 +56,33 @@ window.onscroll = function () {
 
 // When the user clicks on the button, smoothy scroll to the top of the document
 function goToTop() {
-    window.scrollTo({ top: 0, behavior: 'smooth' });
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+    });
 }
 
 // redirect links
-function discord(){
+function discord() {
     window.open("https://discord.gg/94cbgpS3ex")
 }
-function X(){
+
+function X() {
     window.open("https://twitter.com")
 }
-function instagram(){
+
+function instagram() {
     window.open("https://instagram.com")
+}
+
+function modalBackdrop() {
+    const backdrops = document.getElementsByClassName('bg-gray-900 bg-opacity-50 dark:bg-opacity-80 fixed inset-0 z-40');
+    console.log("fine")
+    document.body.addEventListener("click", function () {
+        console.log("Modal backdrop clicked");
+            for (const backdrop of backdrops) {
+                backdrop.style.display = "none"
+            }
+    });
+
 }
