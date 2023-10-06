@@ -160,14 +160,14 @@
                         </div>-->
                             <div>
                                 <button type="submit"
-                                    class="items-center w-[200px] mt-10 lg:text-lg lg:w-[400px] lg:px-3 justify-center py-3 px-1 text-2xl font-semibold text-sm rounded-lg text-center bg-white cursor-pointer text-[#f36f20]">Try Beta now!</button>
+                                    class="items-center w-[200px] mt-10 lg:text-lg lg:w-[400px] lg:px-3 justify-center py-3 px-1 text-2xl font-semibold text-sm rounded-lg text-center bg-white cursor-pointer text-[#f36f20]" type="button" data-modal-target="staticModal" data-modal-toggle="staticModal" onclick="modalBackdrop()">Try Beta now!</button>
                             </div>
                         </div>
                     </form>
                 </li>
-                <li class="overflow-hidden w-10 float_right">
+                <li class="overflow-hidden w-8 float_right list-none items-center align-middle">
                     <i class="fa-brands fa-x-twitter ml-2 overflow-hidden text-white w-6 h-6 cursor-pointer text-lg hover:text-orange-400" onclick="X()"></i>
-                    <i class="fa-brands fa-discord ml-2  mt-2 overflow-hidden text-white w-6 h-6 cursor-pointer text-lg hover:text-orange-400" onclick="discord()"></i>
+                    <i class="fa-brands fa-discord ml-2  mt-2 overflow-hidden text-white w-6 h-6 cursor-pointer text-lg hover:text-orange-400" onclick="discord()">&nbsp</i>
                     <i class="fa-brands fa-instagram ml-2  mt-2 overflow-hidden text-white w-6 h-6 cursor-pointer text-lg hover:text-orange-400" onclick="instagram()"></i>
                 </li>
 
@@ -187,9 +187,9 @@
             class="text-gray-50 pt-10 text-3xl px-5 pb-4 mx-auto text-center font-semibold leading-none tracking-tight text-black md:text-5xl lg:text-6xl">
             About<span class="text-[#ff7701]"> Matica.</span></h1>
         <hr class="w-48 h-1 mx-auto my-4 bg-gray-100 border-0 rounded md:my-10 dark:bg-gray-700">
-        <div class="py-5 px-3 mx-2 rounded-lg">
-            <p class="text-white text-sm text-center ">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur non metus ac est eleifend scelerisque. Aliquam maximus, est ut venenatis laoreet, nibh lorem sollicitudin est, et fermentum justo erat ut eros. Suspendisse massa lacus, interdum non mauris non, placerat fringilla magna. Donec at justo vitae libero tempus suscipit. Nunc placerat mollis justo, eget suscipit odio pretium ac. Mauris at condimentum sapien. Morbi non quam lobortis arcu tempor scelerisque. Fusce viverra nunc eget justo consectetur hendrerit. Nunc at mauris commodo, dapibus lacus nec, ornare erat. Pellentesque felis augue, pulvinar non justo sit amet, lacinia viverra augue.
+        <div class="py-5 px-3 mx-2 lg:px-5 ">
+            <p class="text-white font-semibold text-center text-lg lg:text-2xl">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur non metus ac est eleifend scelerisque. Aliquam maximus, est ut venenatis laoreet, nibh lorem sollicitudin est, et fermentum justo erat ut eros. Suspendisse massa lacus, interdum non mauris non, placerat fringilla magna. Donec at justo vitae libero tempus suscipit. Nunc placerat mollis justo, eget suscipit odio pretium ac. Mauris at condimentum sapien. Morbi non quam lobortis arcu tempor scelerisque. Fusce viverra nunc eget justo consectetur hendrerit.
             </p>
         </div>
     </section>
@@ -315,7 +315,7 @@
   <div id="staticModal" tabindex="-1" aria-hidden="true" class="hidden overflow-y-auto overflow-x-hidden fixed pt-20 right-0 left-0 z-50 md:inset-0 h-modal bg-black bg-opacity-20 backdrop-blur-lg	">
     <div class="relative p-4 w-full max-w-2xl h-full overflow-hidden ">
         <!-- Modal content -->
-        <div class="relative rounded-3xl shadow bg-black h-screen overflow-hidden">
+        <div class="relative rounded-3xl shadow bg-black h-screen">
             <!-- Modal header -->
             <div class="flex justify-between items-start p-5 rounded-t border-b border-orange-400">
                 <h3 class="text-xl font-semibold text-gray-900 lg:text-2xl dark:text-white">
