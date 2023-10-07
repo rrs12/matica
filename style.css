@@ -90,7 +90,7 @@ body {
 @media screen and (min-width: 1024px) {
   .float_right {
     position: absolute;
-    top: 85% !important;
+    top: 80% !important;
     right: 2%;
   }
   

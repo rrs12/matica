@@ -75,6 +75,11 @@ function instagram() {
     window.open("https://instagram.com")
 }
 
+function linkedin() {
+    window.open("https://www.linkedin.com/in/matica-lab-099b65294?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app")
+}
+
+
 function modalBackdrop() {
     const backdrops = document.getElementsByClassName('bg-gray-900 bg-opacity-50 dark:bg-opacity-80 fixed inset-0 z-40');
     console.log("fine")
