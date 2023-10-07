@@ -114,7 +114,7 @@
                     </li>
                     <li class="list-none lg:flex hidden cursor-pointer">
                         <button
-                            class=" font-bold py-2 overflow-hidden rounded-md lg:text-2xl lg:px-2 bg-gradient-to-r from-[#fdee04] to-[#f36f20] bg-clip-text text-transparent" type="button" data-modal-target="staticModal" data-modal-toggle="staticModal" onclick="modalBackdrop()">Sign Up</button>
+                            class=" font-bold py-2 overflow-hidden rounded-md lg:text-2xl lg:px-2 bg-gradient-to-r from-[#fdee04] to-[#f36f20] bg-clip-text text-transparent" type="button" data-modal-target="loginModal" data-modal-toggle="loginModal" onclick="modalBackdrop()">Sign Up</button>
                     </li>
                     <ion-icon onclick="onToggleMenu(this)" name="menu"
                         class="menu_button py-2 px-2 rounded text-3xl  items-center cursor-pointer lg:hidden">
@@ -160,7 +160,7 @@
                         </div>-->
                             <div>
                                 <button type="submit"
-                                    class="items-center w-[200px] lg:mt-0 mt-10 lg:text-lg lg:w-[400px] lg:px-3 justify-center py-3 px-1 text-2xl font-semibold text-sm rounded-lg text-center bg-white cursor-pointer text-[#f36f20]" type="button" data-modal-target="staticModal" data-modal-toggle="staticModal" onclick="modalBackdrop()">Try Beta now!</button>
+                                    class="items-center w-[200px] lg:mt-0 mt-10 lg:text-lg lg:w-[400px] lg:px-3 justify-center py-3 px-1 text-2xl font-semibold text-sm rounded-lg text-center bg-white cursor-pointer text-[#f36f20]" type="button" data-modal-target="loginModal" data-modal-toggle="loginModal" onclick="modalBackdrop()">Try Beta now!</button>
                             </div>
                         </div>
                     </form>
@@ -397,17 +397,16 @@
     <script src="https://unpkg.com/@themesberg/flowbite@latest/dist/flowbite.bundle.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.js"></script>
 
-  <!-- Main modal -->
-  <div id="staticModal" tabindex="-1" aria-hidden="true" class="hidden overflow-y-auto overflow-x-hidden fixed pt-20 right-0 left-0 z-50 inset-0 h-modal bg-black bg-opacity-20 backdrop-blur-lg	">
+  <div id="loginModal" tabindex="-1" aria-hidden="true" class="hidden overflow-y-auto overflow-x-hidden fixed pt-20 right-0 left-0 z-50 inset-0 h-modal bg-black bg-opacity-20 backdrop-blur-lg	">
     <div class="relative p-4 w-full max-w-2xl h-full overflow-hidden bg-black rounded-3xl shadow">
         <!-- Modal content -->
-        <div class="relative rounded-3xl shadow bg-black h-screen">
+        <div class="relative rounded-3xl shadow bg-black h-screen" id="loginContent">
             <!-- Modal header -->
             <div class="flex justify-between items-start p-5 rounded-t border-b border-orange-400">
                 <h3 class="text-xl font-semibold text-gray-900 lg:text-2xl dark:text-white">
                     Log in to your account
                 </h3>
-                <button type="button" class="bg-transparent hover:bg-slate-200 hover:text-orange-900 rounded-lg text-sm p-1.5 ml-auto inline-flex items-center dark:hover:bg-gray-600 dark:hover:text-white" data-modal-toggle="staticModal">
+                <button type="button" class="bg-transparent hover:bg-slate-200 hover:text-orange-900 rounded-lg text-sm p-1.5 ml-auto inline-flex items-center dark:hover:bg-gray-600 dark:hover:text-white" data-modal-toggle="loginModal"  onclick="reload()">
                     <svg class="w-5 h-5" fill="#fc7c32" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>  
                 </button>
             </div>
@@ -436,7 +435,7 @@
       
                           <div class="text-right mt-2">
                               <a href="#"
-                                  class="text-white text-sm font-semibold hover:text-blue-700 focus:text-blue-700">Forgot
+                                  class="text-white text-sm font-semibold hover:text-orange-400 focus:text-orange-400">Forgot
                                   Password?</a>
                           </div>
       
@@ -484,9 +483,9 @@
                           </div>
                       </button>
       
-                      <p class="mt-8 text-white">Need an account? <a href="#"
-                              class="text-[#fc7c32] hover:text-[#f36d20] font-semibold">Create an
-                              account</a></p>
+                      <p class="mt-8 text-white">Need an account? &nbsp<button href="#"
+                              class="text-[#fc7c32] hover:text-[#f36d20] font-semibold" type="button" data-modal-target="createModal" data-modal-toggle="createModal" onclick="this.parentElement.parentElement.parentElement.parentElement.parentElement.parentElement.parentElement.classList.toggle('hidden');">Create an
+                              account</button></p>
       
       
                   </div>
@@ -502,6 +501,103 @@
 </div>
 
 
+<div id="createModal" tabindex="-1" aria-hidden="true" class="hidden overflow-y-hidden overflow-x-hidden fixed pt-20 right-0 left-0 z-50 inset-0 h-modal bg-black bg-opacity-20 backdrop-blur-lg	">
+    <div class="relative p-4 w-full max-w-2xl h-auto overflow-hidden bg-black rounded-3xl shadow">
+        <!-- Modal content -->
+        <div class="relative rounded-3xl shadow bg-black h-screen pb-10">
+            <!-- Modal header -->
+            <div class="flex justify-between items-start p-5 rounded-t border-b border-orange-400">
+                <h3 class="text-xl font-semibold text-gray-900 lg:text-2xl dark:text-white">
+                    Create your account
+                </h3>
+                <button type="button" class="bg-transparent hover:bg-slate-200 hover:text-orange-900 rounded-lg text-sm p-1.5 ml-auto inline-flex items-center dark:hover:bg-gray-600 dark:hover:text-white" data-modal-toggle="createModal" onclick="reload()">
+                    <svg class="w-5 h-5" fill="#fc7c32" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>  
+                </button>
+            </div>
+            <!-- Modal body -->
+            <section class="flex flex-col flex-row h-auto items-center w-full">
+
+      
+              <div class=" w-full pt-5 pb-8 px-6 md:px-16
+              flex items-center justify-center space-y-8">
+      
+                  <div class="w-full h-auto">
+         
+                      <form class="mt-6" action="#" method="POST">
+                        <div>
+                            <label class="block text-white">Username</label>
+                            <input type="email" name="" id="" placeholder="Enter Username"
+                                class="w-full px-4 py-3 rounded-lg bg-gray-200 mt-2 border focus:border-blue-500 focus:bg-white focus:outline-none"
+                                autofocus autocomplete required>
+                        </div>
+
+                          <div>
+                              <label class="block text-white mt-4">Email Address</label>
+                              <input type="email" name="" id="" placeholder="Enter Email Address"
+                                  class="w-full px-4 py-3 rounded-lg bg-gray-200 mt-2 border focus:border-blue-500 focus:bg-white focus:outline-none"
+                                  autofocus autocomplete required>
+                          </div>
+      
+                          <div class="mt-4">
+                              <label class="block text-white">Password</label>
+                              <input type="password" name="" id="" placeholder="Enter Password" minlength="6" class="w-full px-4 py-3 rounded-lg bg-gray-200 mt-2 border focus:border-blue-500
+                      focus:bg-white focus:outline-none" required>
+                          </div>
+      
+                          
+                          <div class="mt-4">
+                            <label class="block text-white">Confirm Password</label>
+                            <input type="password" name="" id="" placeholder="Confirm Password" minlength="6" class="w-full px-4 py-3 rounded-lg bg-gray-200 mt-2 border focus:border-blue-500
+                    focus:bg-white focus:outline-none" required>
+                        </div>
+
+
+                          <button type="submit" class=" w-full block hover:bg-[#fc7c32] focus:bg-[#fc7c32] text-white font-semibold rounded-lg
+                    px-4 py-3 mt-6 bg-gradient-to-r from-[#f36d20] to-[#f68f19]">Create account</button>
+                      </form>
+      
+                      <hr class="my-6 border-gray-300 w-full">
+      
+                      <button type="button"
+                          class="w-full block bg-white hover:bg-gray-100 focus:bg-gray-100 text-gray-900 font-semibold rounded-lg px-4 py-3 border border-gray-300">
+                          <div class="flex items-center justify-center">
+                              <img src="google svg.svg"
+                                  class="w-6 h-6" viewBox="0 0 48 48" sr>
+                                  
+                          
+                              <span class="ml-4">
+                                  Create Account
+                                  with
+                                  Google</span>
+                          </div>
+                      </button>
+                      <br>
+                      <button type="button"
+                          class="w-full block bg-white hover:bg-gray-100 focus:bg-gray-100 text-gray-900 font-semibold rounded-lg px-4 py-3 border border-gray-300">
+                          <div class="flex items-center justify-center">
+                              <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="currentColor" class="bi bi-apple" viewBox="0 0 16 16">
+                                  <path d="M11.182.008C11.148-.03 9.923.023 8.857 1.18c-1.066 1.156-.902 2.482-.878 2.516.024.034 1.52.087 2.475-1.258.955-1.345.762-2.391.728-2.43Zm3.314 11.733c-.048-.096-2.325-1.234-2.113-3.422.212-2.189 1.675-2.789 1.698-2.854.023-.065-.597-.79-1.254-1.157a3.692 3.692 0 0 0-1.563-.434c-.108-.003-.483-.095-1.254.116-.508.139-1.653.589-1.968.607-.316.018-1.256-.522-2.267-.665-.647-.125-1.333.131-1.824.328-.49.196-1.422.754-2.074 2.237-.652 1.482-.311 3.83-.067 4.56.244.729.625 1.924 1.273 2.796.576.984 1.34 1.667 1.659 1.899.319.232 1.219.386 1.843.067.502-.308 1.408-.485 1.766-.472.357.013 1.061.154 1.782.539.571.197 1.111.115 1.652-.105.541-.221 1.324-1.059 2.238-2.758.347-.79.505-1.217.473-1.282Z"/>
+                                  <path d="M11.182.008C11.148-.03 9.923.023 8.857 1.18c-1.066 1.156-.902 2.482-.878 2.516.024.034 1.52.087 2.475-1.258.955-1.345.762-2.391.728-2.43Zm3.314 11.733c-.048-.096-2.325-1.234-2.113-3.422.212-2.189 1.675-2.789 1.698-2.854.023-.065-.597-.79-1.254-1.157a3.692 3.692 0 0 0-1.563-.434c-.108-.003-.483-.095-1.254.116-.508.139-1.653.589-1.968.607-.316.018-1.256-.522-2.267-.665-.647-.125-1.333.131-1.824.328-.49.196-1.422.754-2.074 2.237-.652 1.482-.311 3.83-.067 4.56.244.729.625 1.924 1.273 2.796.576.984 1.34 1.667 1.659 1.899.319.232 1.219.386 1.843.067.502-.308 1.408-.485 1.766-.472.357.013 1.061.154 1.782.539.571.197 1.111.115 1.652-.105.541-.221 1.324-1.059 2.238-2.758.347-.79.505-1.217.473-1.282Z"/>
+                                </svg>
+                              <span class="ml-4">
+                                  Create account
+                                  with
+                                  Apple</span>
+                          </div>
+                      </button>
+    
+      
+                  </div>
+              </div>
+      
+          </section>
+
+
+           <!--contact section-->
+
+        </div>
+    </div>
+</div>
 
 </body>
 

@@ -79,10 +79,13 @@ function modalBackdrop() {
     const backdrops = document.getElementsByClassName('bg-gray-900 bg-opacity-50 dark:bg-opacity-80 fixed inset-0 z-40');
     console.log("fine")
     document.body.addEventListener("click", function () {
-        console.log("Modal backdrop clicked");
             for (const backdrop of backdrops) {
                 backdrop.style.display = "none"
             }
     });
 
+}
+
+function reload(){
+    window.location.reload();
 }
