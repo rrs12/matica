@@ -32,11 +32,11 @@
                             <span class="self-center ml-2 px-1 py-1 md:px-2 rounded-lg bg-white text-black text-xs whitespace-nowrap overflow-hidden font-poppins">beta</span>
                     </a>
                 </div>
-                <div class="xl:text-xl bg-transparent transition-all lg:block hidden rounded-l-3xl overflow-hidden  nav-links lg:static absolute lg:min-h-fit min-h-[80vh] left-[-100%] top-[3%] lg:ml-10  lg:py-2 flex-row  text-xl lg:text-base lg:mt-0 py-14 border-l-none border-r-xl"
+                <div class="xl:text-xl bg-transparent transition-all lg:block hidden rounded-l-3xl overflow-hidden  nav-links lg:static absolute lg:min-h-fit min-h-[90vh] left-[-100%] top-[3%] lg:ml-10  lg:py-2 flex-row  text-xl lg:text-base lg:mt-0 py-14 border-l-none border-r-xl"
                     id="unhide">
 
                     <ul
-                        class=" flex lg:flex-row flex-col lg:items-center lg:gap-[2vw] gap-8 font-normal overflow-hidden px-20">
+                        class=" flex lg:flex-row flex-col lg:items-center lg:gap-[2vw] gap-8 font-normal overflow-hidden px-20 h-full">
                         <li class=" icons lg:flex overflow-hidden lg:hidden">
 
                             <ion-icon name="sunny"
@@ -157,17 +157,18 @@
                                 <input
                                     class="block p-3 pl-10 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 sm:rounded-none sm:rounded-l-lg focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
                                     placeholder="Enter your email" type="email" id="email" required>
-                        </div>-->
-                            <div>
-                                <button type="submit"
-                                    class="items-center w-[200px] lg:mt-0 mt-10 lg:text-lg lg:w-[400px] lg:px-3 justify-center py-3 px-1 text-2xl font-semibold text-sm rounded-lg text-center bg-white cursor-pointer text-[#f36f20]" type="button" data-modal-target="loginModal" data-modal-toggle="loginModal" onclick="modalBackdrop()">Try Beta now!</button>
-                            </div>
                         </div>
-                    </form>
+
+                        </div>
+                    </form>-->
+                    <div>
+                        <button type="submit"
+                            class="items-center w-[200px] lg:mt-0 mt-10 lg:text-lg lg:w-[400px] lg:px-3 justify-center py-3 px-1 text-2xl font-semibold text-sm rounded-lg text-center bg-white cursor-pointer text-[#f36f20]" type="button" data-modal-target="loginModal" data-modal-toggle="loginModal" onclick="modalBackdrop()">Try Beta now!</button>
+                    </div>
                 </li>
-                <li class="overflow-hidden w-8 float_right list-none items-center align-middle">
+                <li class="overflow-hidden w-8 float_right list-none items-center align-middle to-hide" id="icons_hide">
                     <i class="fa-brands fa-x-twitter ml-2 overflow-hidden text-white w-6 h-6 cursor-pointer text-lg hover:text-orange-400" onclick="X()"></i>
-                    <i class="fa-brands fa-discord ml-2  mt-2 overflow-hidden text-white w-6 h-6 cursor-pointer text-lg hover:text-orange-400" onclick="discord()">&nbsp</i>
+                    <i class="fa-brands fa-discord ml-2  mt-2 overflow-hidden text-white w-6 h-6 cursor-pointer text-lg hover:text-orange-400" onclick="discord()"></i>
                     <i class="fa-brands fa-instagram ml-2  mt-2 overflow-hidden text-white w-6 h-6 cursor-pointer text-lg hover:text-orange-400" onclick="instagram()"></i>
                 </li>
 
@@ -400,7 +401,7 @@
   <div id="loginModal" tabindex="-1" aria-hidden="true" class="hidden overflow-y-auto overflow-x-hidden fixed pt-20 right-0 left-0 z-50 inset-0 h-modal bg-black bg-opacity-20 backdrop-blur-lg	">
     <div class="relative p-4 w-full max-w-2xl h-full overflow-hidden bg-black rounded-3xl shadow">
         <!-- Modal content -->
-        <div class="relative rounded-3xl shadow bg-black h-screen" id="loginContent">
+        <div class="relative rounded-3xl shadow bg-black h-auto overflow-hidden" id="loginContent">
             <!-- Modal header -->
             <div class="flex justify-between items-start p-5 rounded-t border-b border-orange-400">
                 <h3 class="text-xl font-semibold text-gray-900 lg:text-2xl dark:text-white">
