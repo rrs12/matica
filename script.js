@@ -76,7 +76,7 @@ function instagram() {
 }
 
 function linkedin() {
-    window.open("https://www.linkedin.com/in/matica-lab-099b65294?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app")
+    window.open("https://www.linkedin.com/in/matica-lab-099b65294")
 }
 
 
