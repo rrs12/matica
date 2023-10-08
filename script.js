@@ -19,15 +19,13 @@ function onToggleMenu(e) {
 const theme_btn = document.querySelector('.theme_btn')
 
 
-
 function theme_change(e) {
     e.name = e.name === 'sunny' ? 'moon' : 'sunny'
     document.body.classList.toggle('dark')
-    localStorage.setItem('theme','light')
+    localStorage.setItem('theme','dark')
     tailwind.config = {
         darkMode: 'class',
     }
-
 }
 
 var typed = new Typed(".typing", {
