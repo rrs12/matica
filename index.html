@@ -401,12 +401,12 @@
     <script src="https://unpkg.com/@themesberg/flowbite@latest/dist/flowbite.bundle.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.js"></script>
 
-  <div id="loginModal" tabindex="-1" aria-hidden="true" class="hidden overflow-y-auto overflow-x-hidden fixed pt-20 right-0 left-0 z-50 inset-0 h-modal bg-black bg-opacity-20 backdrop-blur-lg	">
-    <div class="relative p-4 w-full max-w-2xl h-full overflow-hidden bg-black rounded-3xl shadow">
+  <div id="loginModal" tabindex="-1" aria-hidden="true" class="hidden overflow-hidden overflow-x-hidden fixed pt-20 right-0 left-0 z-50 inset-0 h-modal bg-black bg-opacity-20 backdrop-blur-lg	">
+    <div class="relative p-4 w-full max-w-2xl h-auto overflow-hidden bg-black rounded-3xl shadow">
         <!-- Modal content -->
-        <div class="relative rounded-3xl shadow bg-black h-auto overflow-hidden" id="loginContent">
+        <div class="relative rounded-3xl shadow bg-black h-screen pb-10" id="loginContent">
             <!-- Modal header -->
-            <div class="flex justify-between items-start p-5 rounded-t border-b border-orange-400">
+            <div class="flex justify-between items-start p-5 rounded-t border-orange-400">
                 <h3 class="text-xl font-semibold text-gray-900 lg:text-2xl dark:text-white">
                     Log in to your account
                 </h3>
@@ -497,9 +497,6 @@
       
           </section>
 
-
-           <!--contact section-->
-
         </div>
     </div>
 </div>
@@ -530,7 +527,7 @@
                       <form class="mt-6" action="#" method="POST">
                         <div>
                             <label class="block text-white">Username</label>
-                            <input type="email" name="" id="" placeholder="Enter Username"
+                            <input type="text" name="" id="" placeholder="Enter Username"
                                 class="w-full px-4 py-3 rounded-lg bg-gray-200 mt-2 border focus:border-blue-500 focus:bg-white focus:outline-none"
                                 autofocus autocomplete required>
                         </div>
