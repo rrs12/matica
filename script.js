@@ -20,7 +20,6 @@ const theme_btn = document.querySelector('.theme_btn')
 
 function theme_change(e) {
     e.name = e.name === 'sunny' ? 'moon' : 'sunny'
-    theme_btn.classList.toggle('text-gray-50')
     document.body.classList.toggle('dark')
 }
 
