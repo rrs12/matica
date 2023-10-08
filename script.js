@@ -18,9 +18,16 @@ function onToggleMenu(e) {
 }
 const theme_btn = document.querySelector('.theme_btn')
 
+
+
 function theme_change(e) {
     e.name = e.name === 'sunny' ? 'moon' : 'sunny'
     document.body.classList.toggle('dark')
+    localStorage.setItem('theme','light')
+    tailwind.config = {
+        darkMode: 'class',
+    }
+
 }
 
 var typed = new Typed(".typing", {
@@ -38,7 +45,7 @@ function hide() {
     navLinks.classList.toggle('lg:shadow-none')
     navLinks.classList.toggle('dark:bg-[#0c0c0c]')
     navLinks.classList.toggle('bg-[#F5F5F5]')
-    navLinks.classList.add('lg:bg-opacity-0')
+    navLinks.classList.toggle('lg:bg-transparent')
     home_section.classList.toggle('hidden')
     features_section.classList.toggle('hidden')
     main_navbar.classList.toggle('hidden')
