@@ -49,7 +49,14 @@
 
                         <li class="cursor-pointer overflow-hidden">
                             <button id="dropdownNavbarLink" data-dropdown-toggle="dropdownNavbar" data-dropdown-trigger="hover"
-                                class="flex items-center w-full pr-4 text-gray-900 rounded hover:text-orange-400 md:border-0  md:p-0 md:w-auto text-white">Products
+                                class="flex items-center w-full pr-4 text-gray-900 rounded hover:text-orange-400 md:border-0  md:p-0 md:w-auto text-white hidden lg:flex">Products
+                                <svg class="w-2.5 h-2.5 ml-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                                    fill="none" viewBox="0 0 10 6">
+                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                        stroke-width="2" d="m1 1 4 4 4-4" />
+                                </svg></button>
+                                <button id="dropdownNavbarLink" data-dropdown-toggle="dropdownNavbar"
+                                class="flex items-center w-full pr-4 text-gray-900 rounded hover:text-orange-400 md:border-0  md:p-0 md:w-auto text-white lg:hidden">Products
                                 <svg class="w-2.5 h-2.5 ml-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
                                     fill="none" viewBox="0 0 10 6">
                                     <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
@@ -57,14 +64,15 @@
                                 </svg></button>
                             <!-- Dropdown menu -->
                             <div id="dropdownNavbar"
-                                class="z-10 hidden font-normal divide-y divide-gray-100 rounded-lg shadow w-44 bg-black">
-                                <ul class="py-2 text-sm text-gray-700 text-orange-400"
+                                class="z-10 hidden font-normal divide-y divide-gray-400 rounded-lg shadow w-44 bg-black">
+                                <ul class="py-2 text-sm text-gray-700 text-white "
                                     aria-labelledby="dropdownLargeButton">
                                     <li>
-                                        <a href="#" class="block px-4 py-2">Reddit Video Generator AI</a>
+                                        <a href="#" class="block px-4 py-2 hover:text-orange-400">Reddit Video Generator AI</a>
                                     </li>
+                                    <hr class="border-0 h-px bg-gray-700">
                                     <li>
-                                        <a href="#" class="block px-4 py-2">Motivational Video Generator AI</a>
+                                        <a href="#" class="block px-4 py-2 hover:text-orange-400">Motivational Video Generator AI</a>
                                     </li>
 
                                 </ul>
