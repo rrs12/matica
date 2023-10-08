@@ -18,12 +18,12 @@
 </head>
 </head>
 
-<body class="overflow-hidden">
+<body class="overflow-hidden dark">
     <!--Navbar-->
     <div id="full-screen" class="overflow-hidden h-screen">
         <header class="nav_bar shadow">
             <nav
-                class="navbar flex justify-between items-center w-full px-2 mx-auto z-2 py-4  text-white overflow-hidden">
+                class="navbar flex justify-between items-center w-full px-2 mx-auto z-2 py-4 text-white overflow-hidden">
                 <div class="logo_text">
                     <a href="#" class="flex items-center">
                         <img src="logo.png" class="sm:h-14 xs:-ml-2 xs:mr-2 sm:mr-3 xl:h-16 h-10" />
@@ -64,7 +64,7 @@
                                 </svg></button>
                             <!-- Dropdown menu -->
                             <div id="dropdownNavbar"
-                                class="z-10 hidden font-normal divide-y divide-gray-400 rounded-lg shadow w-44 bg-black">
+                                class="z-10 hidden font-normalrounded-lg shadow w-44 bg-black">
                                 <ul class="py-2 text-sm text-gray-700 text-white "
                                     aria-labelledby="dropdownLargeButton">
                                     <li>
@@ -226,13 +226,13 @@
 
 
     <!--about-->
-    <section class="about-sec" id="about-sec">
+    <section class="about-sec dark:bg-black bg-white" id="about-sec">
         <h1
-            class="text-gray-50 pt-10 text-3xl px-5 pb-4 mx-auto text-center font-semibold leading-none tracking-tight text-black md:text-5xl lg:text-6xl">
+            class="dark:text-gray-50 pt-10 text-3xl px-5 pb-4 mx-auto text-center font-semibold leading-none tracking-tight text-black md:text-5xl lg:text-6xl">
             About<span class="text-[#ff7701]"> Matica.</span></h1>
-        <hr class="w-48 h-1 mx-auto my-4 bg-gray-100 border-0 rounded md:my-10 dark:bg-gray-700">
+        <hr class="w-48 h-1 mx-auto my-4 dark:bg-gray-100 bg-gray-900 border-0 rounded md:my-10 dark:bg-gray-700">
         <div class="py-5 px-3 mx-2 lg:px-5 ">
-            <p class="text-white font-semibold text-center text-lg lg:text-2xl">
+            <p class="text-black dark:text-white font-semibold text-center text-lg lg:text-2xl">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur non metus ac est eleifend
                 scelerisque. Aliquam maximus, est ut venenatis laoreet, nibh lorem sollicitudin est, et fermentum justo
                 erat ut eros. Suspendisse massa lacus, interdum non mauris non, placerat fringilla magna. Donec at justo
@@ -244,16 +244,16 @@
     </section>
 
     <!--features-->
-    <section id="features" class="features">
+    <section id="features" class="features dark:bg-black bg-white">
         <h1
-            class="text-gray-50 pt-10 text-3xl px-5 pb-4 mx-auto text-center font-semibold leading-none tracking-tight text-black md:text-5xl lg:text-6xl">
+            class="dark:text-gray-50 pt-10 text-3xl px-5 pb-4 mx-auto text-center font-semibold leading-none tracking-tight text-black md:text-5xl lg:text-6xl">
             With Matica, You get these<span class="text-[#ff7701]"> amazing features.</span></h1>
-        <hr class="w-48 h-1 mx-auto my-4 bg-gray-100 border-0 rounded md:my-10 dark:bg-gray-700">
+            <hr class="w-48 h-1 mx-auto my-4 dark:bg-gray-100 bg-gray-900 border-0 rounded md:my-10 dark:bg-gray-700">
 
         <div class="px-4 py-8 mx-auto max-w-xl md:max-w-full lg:max-w-screen-2xl md:px-24 lg:px-8 lg:py-20 ">
             <div class="grid gap-8 row-gap-8 sm:grid-cols-2 lg:grid-cols-3">
                 <div
-                    class="duration-200 rounded-lg border-gray-800 border p-3 lg:hover:border-[#f58748] hover: bg-gray">
+                    class="duration-200 rounded-lg border-gray-800 border p-3 lg:hover:border-[#f58748] dark:bg-[#0c0c0c] bg-[#fdfafa]">
                     <div class="flex items-center justify-center w-[50px] h-[40px] mb-4 rounded-full bg-indigo-50">
                         <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512">
                             <!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com/ License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
@@ -262,13 +262,13 @@
                         </svg>
                     </div>
                     <h6 class="mb-2 font-semibold md:text-lg leading-5 text-[#f36f20]">Video Trimming</h6>
-                    <p class="mb-3 text-md text-white">
+                    <p class="mb-3 text-md text-black dark:text-white">
                         Prior to downloading, Matica allows users to easily select and trim specific time frames of the
                         video to suit their preferences.
                     </p>
                 </div>
                 <div
-                    class="duration-200 rounded-lg border-gray-800 border p-3 lg:hover:border-[#f58748] hover: bg-gray">
+                    class="duration-200 rounded-lg border-gray-800 border p-3 lg:hover:border-[#f58748]  dark:bg-[#0c0c0c] bg-[#fdfafa]">
                     <div class="flex items-center justify-center w-[50px] h-[40px] mb-4 rounded-full bg-indigo-50">
                         <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 576 512">
                             <!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com/ License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
@@ -277,13 +277,13 @@
                         </svg>
                     </div>
                     <h6 class="mb-2 font-semibold md:text-lg leading-5 text-[#f36f20]">Video Editing</h6>
-                    <p class="mb-3 text-md text-white">
+                    <p class="mb-3 text-md text-black dark:text-white">
                         Matica offers an intuitive interface designed to make video editing accessible even to absolute
                         beginners. </p>
                 </div>
 
                 <div
-                    class="duration-200 rounded-lg border-gray-800 border p-3 lg:hover:border-[#f58748] hover: bg-gray">
+                    class="duration-200 rounded-lg border-gray-800 border p-3 lg:hover:border-[#f58748]  dark:bg-[#0c0c0c] bg-[#fdfafa]">
                     <div class="flex items-center justify-center w-[50px] h-[40px] mb-4 rounded-full bg-indigo-50">
                         <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 640 512">
                             <!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com/ License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
@@ -292,13 +292,13 @@
                         </svg>
                     </div>
                     <h6 class="mb-2 font-semibold md:text-lg leading-5 text-[#f36f20]">Link Detection</h6>
-                    <p class="mb-3 text-md text-white">
+                    <p class="mb-3 text-md text-black dark:text-white">
                         The web application can automatically identify copied links and enable users to download the
                         linked content seamlessly. </p>
                 </div>
 
                 <div
-                    class="duration-200 rounded-lg border-gray-800 border p-3 lg:hover:border-[#f58748] hover: bg-gray">
+                    class="duration-200 rounded-lg border-gray-800 border p-3 lg:hover:border-[#f58748]  dark:bg-[#0c0c0c] bg-[#fdfafa]">
                     <div class="flex items-center justify-center w-[50px] h-[40px] mb-4 rounded-full bg-indigo-50">
                         <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512">
                             <!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com/ License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
@@ -307,13 +307,13 @@
                         </svg>
                     </div>
                     <h6 class="mb-2 font-semibold md:text-lg leading-5 text-[#f36f20]">Social Media Import</h6>
-                    <p class="mb-3 text-md text-white">
+                    <p class="mb-3 text-md text-black dark:text-white">
                         Users have the capability to import up to 10 selected clips or videos and securely store them in
                         the cloud for easy access.</p>
                 </div>
 
                 <div
-                    class="duration-200 rounded-lg border-gray-800 border p-3 lg:hover:border-[#f58748] hover: bg-gray">
+                    class="duration-200 rounded-lg border-gray-800 border p-3 lg:hover:border-[#f58748]  dark:bg-[#0c0c0c] bg-[#fdfafa]">
                     <div class="flex items-center justify-center w-[50px] h-[40px] mb-4 rounded-full bg-indigo-50">
                         <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 640 512">
                             <!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com/ License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
@@ -322,13 +322,13 @@
                         </svg>
                     </div>
                     <h6 class="mb-2 font-semibold md:text-lg leading-5 text-[#f36f20]">Cloud Storage</h6>
-                    <p class="mb-3 text-md text-white">
+                    <p class="mb-3 text-md text-black dark:text-white">
                         Our cloud storage feature enables users to save their projects and videos conveniently.
                         Additionally, users can leave comments on videos to communicate their intended actions.
                 </div>
 
                 <div
-                    class="duration-200 rounded-lg border-gray-800 border p-3 lg:hover:border-[#f58748] hover: bg-gray">
+                    class="duration-200 rounded-lg border-gray-800 border p-3 lg:hover:border-[#f58748]  dark:bg-[#0c0c0c] bg-[#fdfafa]">
                     <div class="flex items-center justify-center w-[50px] h-[40px] mb-4 rounded-full bg-indigo-50">
                         <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 576 512">
                             <!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com/ License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
@@ -337,12 +337,12 @@
                         </svg>
                     </div>
                     <h6 class="mb-2 font-semibold md:text-lg leading-5 text-[#f36f20]">Automatic Captions</h6>
-                    <p class="mb-3 text-md text-white">
+                    <p class="mb-3 text-md text-black dark:text-white">
                         Generate automatic captions with the option to easily edit them for quicker results
                 </div>
 
                 <div
-                    class="duration-200 rounded-lg border-gray-800 border p-3 lg:hover:border-[#f58748] hover: bg-gray">
+                    class="duration-200 rounded-lg border-gray-800 border p-3 lg:hover:border-[#f58748]  dark:bg-[#0c0c0c] bg-[#fdfafa]">
                     <div class="flex items-center justify-center w-[50px] h-[40px] mb-4 rounded-full bg-indigo-50">
                         <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 576 512">
                             <!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com/ License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
@@ -351,7 +351,7 @@
                         </svg>
                     </div>
                     <h6 class="mb-2 font-semibold md:text-lg leading-5 text-[#f36f20]">Flexible Export Options</h6>
-                    <p class="mb-3 text-md text-white">
+                    <p class="mb-3 text-md text-black dark:text-white">
                         Matica offers a wide range of export options, including adjustable quality settings, video
                         format conversion, and video preview functionality, allowing users to tailor their output to
                         their specific needs.
@@ -366,6 +366,11 @@
     <script src="https://cdn.jsdelivr.net/npm/@preline/preline@1.0.0/dist/hs-ui.bundle.min.js"></script>
     <script src="https://unpkg.com/@themesberg/flowbite@latest/dist/flowbite.bundle.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.js"></script>
+    <script>
+        tailwind.config = {
+        darkMode: 'class',
+    }
+      </script>
 
     <div id="loginModal" tabindex="-1" aria-hidden="true"
         class="hidden overflow-hidden overflow-x-hidden fixed pt-20 right-0 left-0 z-50 inset-0 h-modal bg-black bg-opacity-20 backdrop-blur-lg	">

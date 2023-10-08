@@ -131,9 +131,14 @@ body {
   }
 
 
-#features #about-sec{
-  background: rgb(8, 8, 8);
+.bg-black{
+  background: #0c0c0c;
 }
+.bg-white{
+  background-color: #FEFEFA;
+}
+
+
 .bg-gray{
   background:  #0c0c0c;
 }
