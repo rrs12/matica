@@ -632,7 +632,7 @@
     </div>
 
     <!--footer-->
-   
+
     <footer class="bg-[#fdfafa] dark:bg-[#0c0c0c]">
         <div class="mx-auto w-full max-w-screen-xl p-3 py-6 lg:py-8">
             <div class="md:flex md:justify-between">
@@ -644,6 +644,12 @@
                         <span
                             class="self-center ml-2 px-1 py-1 md:px-2 rounded-lg bg-black text-white dark:bg-white dark:text-black text-xs whitespace-nowrap overflow-hidden font-poppins">beta</span>
                     </a>
+                    <button type="submit"
+                        class="items-center mb-5 mt-5 w-[80px] md:text-md md:ml-5 md:w-[100px] lg:px-3 justify-center py-2 px-1 ml-2 text-sm rounded-lg text-center font-semibold bg-white cursor-pointer text-[#f36f20]"
+                        type="button" data-modal-target="loginModal" data-modal-toggle="loginModal"
+                        onclick="modalBackdrop()">Subscribe</button>
+
+
                 </div>
                 <div class="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
                     <!--<div>
@@ -675,25 +681,41 @@
                         </ul>
                     </div>
                     <div>
+                        <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Nav Links</h2>
+                        <ul class="text-gray-500 dark:text-gray-400 font-medium">
+                            <li class="mb-4">
+                                <a href="#home" class="hover:underline">Home</a>
+                            </li>
+                            <li class="mb-4">
+                                <a href="#about-sec" class="hover:underline">About</a>
+                            </li>
+                            <li class="mb-4">
+                                <a href="#features" class="hover:underline">Features</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
                         <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Legal</h2>
                         <ul class="text-gray-500 dark:text-gray-400 font-medium">
                             <li class="mb-4">
                                 <a href="#" class="hover:underline">Privacy Policy</a>
                             </li>
                             <li>
-                                <a href="#" class="hover:underline">Terms & Conditions</a>
+                                <a href="#" class="hover:underline text-sm md:text-normal">Terms & Conditions</a>
                             </li>
                         </ul>
                     </div>
+                    
                 </div>
             </div>
+
             <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
             <div class="sm:flex sm:items-center sm:justify-center">
                 <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">Made by <a
                         class="hover:underline font-semibold">ex6nix Developers</a>
                 </span>
 
-               <!-- <div class="flex mt-4 space-x-5 sm:justify-center sm:mt-0">
+                <!-- <div class="flex mt-4 space-x-5 sm:justify-center sm:mt-0">
                     <i class="fa-brands fa-x-twitter text-gray-500 hover:text-gray-900 dark:hover:text-white"
                         onclick="X()"></i>
                     <i class="fa-brands fa-instagram mt-1 fa-lg text-gray-500 hover:text-gray-900 dark:hover:text-white w-4 h-4"
