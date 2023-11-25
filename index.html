@@ -88,7 +88,7 @@
                     id="unhide">
 
                     <ul
-                        class=" flex lg:flex-row flex-col lg:items-center lg:gap-[2vw] gap-8 font-normal overflow-hidden px-20 h-full">
+                        class=" flex lg:flex-row flex-col lg:items-center lg:gap-[2vw] slg:space-y-0 space-y-8  font-normal overflow-hidden px-20 h-full">
                         <li class=" icons lg:flex overflow-hidden lg:hidden">
 
                             <button id="theme-toggle" type="button" class="rounded-lg text-xl  sm:text-2xl p-2.5">
@@ -106,37 +106,15 @@
 
                         <li class="cursor-pointer overflow-hidden">
                             <button id="dropdownNavbarLink" data-dropdown-toggle="dropdownNavbar"
-                                data-dropdown-trigger="hover"
-                                class="flex items-center w-full pr-4 rounded dark:hover:text-orange-400 hover:text-orange-400 md:border-0  md:p-0 md:w-auto text-black dark:text-white hidden lg:flex">Products
-                                <svg class="w-2.5 h-2.5 ml-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
-                                    fill="none" viewBox="0 0 10 6">
-                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                                        stroke-width="2" d="m1 1 4 4 4-4" />
-                                </svg></button>
-                            <button id="dropdownNavbarLink" data-dropdown-toggle="dropdownNavbar"
-                                class="flex items-center w-full pr-4 text-gray-900 rounded dark:hover:text-orange-400 hover:text-orange-400 md:border-0  md:p-0 md:w-auto text-black dark:text-white lg:hidden">Products
+                                data-dropdown-trigger="hover" data-dropdown-placement="bottom"
+                                class="flex items-center w-full pr-4 rounded dark:hover:text-orange-400 hover:text-orange-400 md:border-0  md:p-0 md:w-auto text-black dark:text-white">Products
                                 <svg class="w-2.5 h-2.5 ml-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
                                     fill="none" viewBox="0 0 10 6">
                                     <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
                                         stroke-width="2" d="m1 1 4 4 4-4" />
                                 </svg></button>
                             <!-- Dropdown menu -->
-                            <div id="dropdownNavbar" class="z-10 hidden font-normalrounded-lg shadow w-44 bg-black">
-                                <ul class="py-2 text-sm text-gray-700 text-white "
-                                    aria-labelledby="dropdownLargeButton">
-                                    <li>
-                                        <a href="#" class="block px-4 py-2 hover:text-orange-400">Reddit Video Generator
-                                            AI</a>
-                                    </li>
-                                    <hr class="border-0 h-px bg-gray-700">
-                                    <li>
-                                        <a href="#" class="block px-4 py-2 hover:text-orange-400">Motivational Video
-                                            Generator AI</a>
-                                    </li>
 
-                                </ul>
-
-                            </div>
                         </li>
                         <li class="cursor-pointer overflow-hidden text-black dark:text-white">
                             <a class=" hover:text-orange-400" href="#features" onclick="hide()">Features</a>
@@ -162,6 +140,7 @@
                         </li>
 
                     </ul>
+
                 </div>
                 <div class="flex items-center gap-2">
                     <li class="list-none"><button
@@ -176,7 +155,7 @@
                                     d="M19 9l-7 7-7-7"></path>
                             </svg></button>
                         <!-- Dropdown menu -->
-                        <div class="hidden  text-base z-50 bg-black divide-gray-100 shadow my-4" id="dropdown">
+                        <div class="hidden  text-base z-50 rounded-lg bg-black divide-gray-100 shadow my-4" id="dropdown">
 
                             <ul class="py-1" aria-labelledby="dropdown">
                                 <li>
@@ -223,6 +202,23 @@
                         class="menu_button py-2 px-2 rounded text-3xl text-black dark:text-white items-center cursor-pointer lg:hidden">
                     </ion-icon>
                 </div>
+
+                                            <div id="dropdownNavbar" class="z-50 hidden font-normal rounded-lg shadow w-44 bg-black">
+                                <ul class="py-2 text-sm text-gray-700 text-white "
+                                    aria-labelledby="dropdownLargeButton">
+                                    <li>
+                                        <a href="#" class="block px-4 py-2 hover:text-orange-400">Reddit Video Generator
+                                            AI</a>
+                                    </li>
+                                    <hr class="border-0 h-px bg-gray-700">
+                                    <li>
+                                        <a href="#" class="block px-4 py-2 hover:text-orange-400">Motivational Video
+                                            Generator AI</a>
+                                    </li>
+
+                                </ul>
+
+                            </div>
             </nav>
         </header>
 
