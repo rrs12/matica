@@ -5,6 +5,11 @@ const home_section = document.querySelector('.home_section')
 const features_section = document.querySelector('.features')
 const main_navbar = document.querySelector('#unhide')
 
+if(localStorage.getItem('color-theme')===null){
+    localStorage.setItem('color-theme', 'dark');
+}
+
+
 function onToggleMenu(e) {
     e.name = e.name === 'menu' ? 'close' : 'menu'
     navLinks.classList.toggle('left-[3%]')
